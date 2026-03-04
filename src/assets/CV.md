@@ -54,15 +54,15 @@ Email: diego.delalamo@gmail.com
 * Taught and co-hosted twelve interactive in-person and remote workshops and courses, including "Python for the Biomedical Sciences"
 * Coauthored ten peer-reviewed publications and presented research at four international conferences
 
-### Karyopharm Therapeutics (Boston, MA, USA)
+### Karyopharm Therapeutics (Newton, MA, USA)
 
-**Senior Research Associate (Jan 2014 - Apr 2015)**
+**Senior Research Associate (Jan 2014 - May 2015)**
 * Tested small molecule inhibitors of XPO1 using cell-based assays and identified the future clinical candidate Eltanexor
-* Maintained cell culture stocks of human and mammalian cells, as well as freeze/thaw records of those stocks
+* Maintained cell culture stocks of human and mammalian cells
 
 **Research Associate (Jul 2012 - Dec 2013)**
-* Implemented and managed data trackers to monitor plasma samples from Phase I/II clinical trials
-* Wrote preclinical dosing protocols, interfaced with academic partners and CROs
+* Designed, implemented, and managed data trackers to monitor blood and plasma samples collected during Phase I and II clinical trials
+* Wrote preclinical dosing schedules and interfaced with academic partners and contract research organizations
 * Proofread patents for small molecules, verified that reported values and structures matched internal data
 
 ## Education
@@ -71,8 +71,6 @@ Email: diego.delalamo@gmail.com
 Chemical and Physical Biology Program (Aug 2015 - Aug 2021)
 
 **Dissertation title:** [Integrative modeling of secondary active transporters](https://ir.vanderbilt.edu/handle/1803/16929)
-
-**Mentors:** Prof. Hassane Mchaourab and Prof. Jens Meiler
 
 ### B.S. - University of New Hampshire (Durham, NH, USA)
 
