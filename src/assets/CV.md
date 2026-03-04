@@ -150,5 +150,5 @@ Chemical and Physical Biology Program (Aug 2015 - Aug 2021)
 
 ## Side projects
 
-* **[SAbR (Structure-based Antibody Renumbering)](https://github.com/delalamo/SAbR):** Renumbers antibody PDB files using the 3D coordinate of backbone atoms. It uses custom forked versions of SoftAlign and ANARCI to align structures to chain-specific consensus embeddings and renumber to various antibody schemes, respectively.
+* **[SAbR (Structure-based Antibody Renumbering)](https://github.com/delalamo/SAbR):** A [PyPI-installable package](https://pypi.org/project/sabr-kit/) that renumbers antibody PDB files using the 3D coordinate of backbone atoms. It uses custom forked versions of SoftAlign and ANARCI to align structures to chain-specific consensus embeddings and renumber to various antibody schemes, respectively.
 * **[PubMedBERT literature fetcher](https://github.com/delalamo/PubMedFetcher):** A cloud-based app that emails me papers I might find interesting on a daily basis. It is hosted on **Heroku** and 1) scrapes biorxiv, arxiv, and PubMED for new submissions each morning, 2) embeds their abstracts using large language models (via the **OpenAI** API), and 3) calculates relevance using a custom-trained regression model (**SciKit-Learn**). I receive an e-mail every weekday morning at 5AM GMT with the results.
