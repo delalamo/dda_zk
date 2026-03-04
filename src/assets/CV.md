@@ -132,7 +132,7 @@ Chemical and Physical Biology Program (Aug 2015 - Aug 2021)
 ## Presentations and Invited Talks
 
 **2025**
-* "Enabling cryo-EM of challenging membrane protein drug targets with de novo protein design" Oral presentation at Discovery on Target conference, Boston, MA, USA, (24 September 2025)
+* "Enabling cryo-EM of challenging membrane protein drug targets with de novo protein design" Oral presentation at Discovery on Target conference, Boston, MA, USA, 24 September 2025
 * "[*De novo* prediction of protein structural dynamics](https://delalamo.xyz/assets/post_images/2025_04_27_PPT.pdf)" Oral presentation at the Structural Biology 2.0 Workshop, Institut Pasteur, Montevideo, Uruguay, 28 April 2025
 
 **2024**
