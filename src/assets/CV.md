@@ -132,6 +132,7 @@ Chemical and Physical Biology Program (Aug 2015 - Aug 2021)
 ## Presentations and Invited Talks
 
 **2025**
+* "Enabling cryo-EM of challenging membrane protein drug targets with de novo protein design" Oral presentation at Discovery on Target conference, Boston, MA, USA, (24 September 2025)
 * "[*De novo* prediction of protein structural dynamics](https://delalamo.xyz/assets/post_images/2025_04_27_PPT.pdf)" Oral presentation at the Structural Biology 2.0 Workshop, Institut Pasteur, Montevideo, Uruguay, 28 April 2025
 
 **2024**
@@ -149,4 +150,5 @@ Chemical and Physical Biology Program (Aug 2015 - Aug 2021)
 
 ## Side projects
 
+* **[SAbR (Structure-based Antibody Renumbering)](https://github.com/delalamo/SAbR):** Renumbers antibody PDB files using the 3D coordinate of backbone atoms. It uses custom forked versions of SoftAlign and ANARCI to align structures to chain-specific consensus embeddings and renumber to various antibody schemes, respectively.
 * **[PubMedBERT literature fetcher](https://github.com/delalamo/PubMedFetcher):** A cloud-based app that emails me papers I might find interesting on a daily basis. It is hosted on **Heroku** and 1) scrapes biorxiv, arxiv, and PubMED for new submissions each morning, 2) embeds their abstracts using large language models (via the **OpenAI** API), and 3) calculates relevance using a custom-trained regression model (**SciKit-Learn**). I receive an e-mail every weekday morning at 5AM GMT with the results.
