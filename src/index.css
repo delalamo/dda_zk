@@ -1,319 +1,334 @@
-/* Add/Update this in src/index.css */
+@import "tailwindcss";
 
-/* Basic Reset */
-* {
+/* ─── Design tokens ─────────────────────────────────────────────────────── */
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+
+  /* Light mode */
+  --color-bg: #fafaf9;
+  --color-text: #1c1917;
+  --color-text-muted: #78716c;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-border: #e7e5e4;
+  --color-surface: #ffffff;
+  --color-code-bg: #f5f5f4;
+  --color-blockquote-border: #d6d3d1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0c0a09;
+    --color-text: #fafaf9;
+    --color-text-muted: #a8a29e;
+    --color-accent: #60a5fa;
+    --color-accent-hover: #93c5fd;
+    --color-border: #292524;
+    --color-surface: #1c1917;
+    --color-code-bg: #1c1917;
+    --color-blockquote-border: #44403c;
+  }
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f8f8f8; /* Light gray background */
-  padding-bottom: 60px; /* Ensure space for footer */
+  font-family: var(--font-sans);
+  line-height: 1.75;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
 }
 
-#root {
-  /* *** CHANGED max-width to width FOR CONSISTENT LAYOUT *** */
-  width: 800px; /* Fixed width for the main content area */
-  /* Ensure it doesn't exceed viewport width on small screens */
-  max-width: 95%; /* Allow it to shrink slightly on very narrow screens */
-  margin: 2rem auto; /* Center content horizontally */
-  padding: 1rem 2rem; /* Adjusted padding */
-  background-color: #fff; /* White background for content area */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  min-height: calc(
-    100vh - 4rem - 60px
-  ); /* Ensure content area pushes footer down */
-}
-
+/* ─── Typography ─────────────────────────────────────────────────────────── */
 h1,
 h2,
-h3 {
-  margin-bottom: 0.8rem;
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
   line-height: 1.3;
+  color: var(--color-text);
+  font-weight: 600;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-a {
-  color: #007bff; /* Blue links */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Basic Header/Footer Styling */
-header,
-footer {
-  padding: 1rem 0;
-  /* Removed bottom border from header to avoid double lines */
-  /* border-bottom: 1px solid #eee; */
-}
-header {
-  margin-bottom: 1.5rem;
-}
-
-footer {
-  border-top: 1px solid #eee;
+  font-size: 1.35rem;
   margin-top: 2rem;
-  text-align: center;
-  font-size: 0.9em;
-  color: #666;
-  /* Footer positioning might need adjustment depending on exact layout needs */
-  /* position: relative; */
-  /* bottom: 0; */
-  /* width: 100%; */
-  /* max-width: 800px; /* Match content width */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  padding-top: 1rem;
-  padding-bottom: 1rem; /* Added padding bottom */
+  margin-bottom: 0.6rem;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1rem; /* Spacing between nav items */
-}
-
-/* Styles for the blog post preview title */
-.post-title {
-  margin-bottom: 0.5rem; /* Add some space below title */
-  /* Prevent long words/URLs from breaking layout */
-  overflow-wrap: break-word;
-  word-wrap: break-word; /* Older browsers */
-  /* Optional: Add hyphens for cleaner breaks (browser support varies) */
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  /* Ensure the title doesn't overflow its container (100% of parent) */
-  max-width: 100%;
-}
-
-.post-title a {
-  color: inherit; /* Make link color same as h2 */
-  text-decoration: none; /* Remove underline */
-}
-
-.post-title a:hover {
-  text-decoration: underline; /* Add underline on hover */
-  color: #0056b3; /* Optional: darken link color on hover */
-}
-
-/* Styles for post metadata (date, category) */
-.post-meta {
-  font-size: 0.9em;
-  color: #777;
+h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-/* Styles for the post excerpt */
-.post-excerpt {
-  margin-bottom: 1rem; /* Space below excerpt */
-  color: #555;
-  /* Wrapping rules for excerpt */
-  overflow-wrap: break-word;
-  word-wrap: break-word; /* Older browsers */
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  /* Ensure excerpt doesn't overflow its container */
-  max-width: 100%;
+p {
+  margin-bottom: 1.1rem;
+  color: var(--color-text);
 }
 
-/* Styles for the read-more link */
-.read-more-link {
-  font-weight: bold;
-  color: #007bff;
+a {
+  color: var(--color-accent);
   text-decoration: none;
+  transition: color 0.15s ease;
 }
-.read-more-link:hover {
-  color: #0056b3;
+
+a:hover {
+  color: var(--color-accent-hover);
   text-decoration: underline;
 }
 
-/* Minimal code block styling (if used in posts) */
-pre {
-  background-color: #eee;
-  padding: 1em;
-  overflow-x: auto; /* Handle long code lines */
-  border-radius: 4px;
-  margin-bottom: 1rem;
+/* ─── Layout: root element is no longer the white card ──────────────────── */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* ─── Lists ──────────────────────────────────────────────────────────────── */
+ul,
+ol {
+  padding-left: 1.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* ─── Code ───────────────────────────────────────────────────────────────── */
 code {
   font-family: 'Courier New', Courier, monospace;
-}
-
-/* Category Filter Button Styles */
-.category-filters button {
-  padding: 0.4rem 0.8rem;
-  cursor: pointer;
+  font-size: 0.875em;
+  background-color: var(--color-code-bg);
+  border: 1px solid var(--color-border);
   border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: white;
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease; /* Smooth transition */
+  padding: 0.1em 0.35em;
+  color: var(--color-text);
 }
 
-.category-filters button:hover {
-  background-color: #f0f0f0; /* Light grey on hover */
+pre {
+  background-color: var(--color-code-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
 }
 
-/* Style for the active button can be handled by inline styles in the component
-   or by adding/removing an 'active' class and defining .category-filters button.active here */
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+/* ─── Blockquote ─────────────────────────────────────────────────────────── */
 blockquote {
-  background-color: #f9f9f9; /* Optional: Light grey background */
-  border-left: 5px solid #ccc; /* Standard: Grey vertical line on the left */
-  margin-top: 1.5em;         /* Space above the quote */
-  margin-bottom: 1.5em;      /* Space below the quote */
-  margin-left: 20px;         /* Indentation from the left */
-  margin-right: 20px;        /* Optional: Indentation from the right */
-  padding: 0.8em 1em;        /* Padding inside the quote box (top/bottom, left/right) */
-  font-style: italic;        /* Optional: Italicize the text */
-  color: #333;              /* Optional: Slightly darker text color */
+  border-left: 3px solid var(--color-blockquote-border);
+  margin: 1.5rem 0;
+  padding: 0.6rem 1.25rem;
+  color: var(--color-text-muted);
+  font-style: italic;
 }
 
-/* Optional: Ensure paragraphs inside the blockquote don't add extra bottom margin */
 blockquote p {
   margin-bottom: 0;
+  color: var(--color-text-muted);
 }
 
-/* Optional: Style the citation/source if you add one */
 blockquote footer {
   margin-top: 0.5em;
   font-style: normal;
-  font-size: 0.9em;
+  font-size: 0.875em;
   text-align: right;
 }
 
-/* Target unordered lists (bullet points) */
-ul {
-  /* Adjust this value to control the indentation amount */
-  padding-left: 40px;
-
-  /* It's often good practice to also add some vertical spacing */
-  margin-top: 1em;
-  margin-bottom: 1em;
+/* ─── Images ─────────────────────────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
-/* Optional: Add some space below each list item */
-ul li {
-  margin-bottom: 0.5em;
+/* ─── HR ─────────────────────────────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
 }
 
-p {
-  text-align: justify;
-}
-
-/* --- NO Counter Setup Needed --- */
-
+/* ─── Post content container ─────────────────────────────────────────────── */
 .content-container {
-  /* Container styles */
-  max-width: 800px;
-  margin: 2em auto;
-  line-height: 1.6;
-  font-family: sans-serif;
+  max-width: 100%;
+  line-height: 1.75;
 }
 
-/* --- Footnote Reference Styling (in text) --- */
+/* ─── Footnote references (in-text superscripts) ─────────────────────────── */
 .footnote-ref {
   vertical-align: super;
-  font-size: 0.75em;
+  font-size: 0.72em;
   line-height: 1;
   margin-left: 1px;
 }
 
-/* Style the link where the number is INJECTED by JS */
 .footnote-ref a {
-  font-size: 1em; /* Inherit size from parent sup */
+  font-size: 1em;
   vertical-align: baseline;
   text-decoration: none;
-  color: blue;
+  color: var(--color-accent);
   cursor: pointer;
   padding: 0;
 }
 
-/* --- Footnotes List Styling (Using citation-js) --- */
+/* ─── Footnotes list (end of post) ──────────────────────────────────────── */
 .footnotes-section {
-  margin-top: 3em;
-  padding-top: 1em;
-  border-top: 1px solid #ccc;
-  font-size: 0.9em;
-  line-height: 1.5;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
 }
 
-/* Style the container for the list */
 .citation-list {
-  /* Remove default list styling if it was an <ol> */
   list-style: none;
   padding-left: 0;
 }
 
-/* Style each citation item */
 .citation-item {
-  margin-bottom: 0.75em; /* Space between entries */
-  padding-left: 2.5em;   /* Indentation */
-  position: relative;    /* For positioning the number */
+  margin-bottom: 0.75rem;
+  padding-left: 2.5rem;
+  position: relative;
 }
 
-/* Style the number */
 .footnote-list-number {
   position: absolute;
   left: 0;
-  top: 0; /* Adjust if needed */
-  width: 2em; /* Adjust width */
+  top: 0;
+  width: 2rem;
   text-align: right;
-  font-weight: normal;
+  font-weight: 400;
   display: inline-block;
-  margin-right: 0.5em; /* Space between number and citation text */
+  margin-right: 0.5rem;
+  color: var(--color-text-muted);
 }
 
-/* Style the citation content itself (the span holding the HTML) */
 .citation-content {
-  display: inline; /* Or block depending on citation style */
+  display: inline;
+  color: var(--color-text-muted);
 }
-/* You might need more specific styles depending on the HTML structure */
-/* generated by citation-js for the chosen template (e.g., APA) */
-/* Inspect the generated HTML to add styles for italics, bold, etc. */
-/* .citation-content em { font-style: italic; } */
-/* .citation-content strong { font-weight: bold; } */
 
-
-/* Style the back-links */
 .citation-item a[href^="#fnref"] {
   text-decoration: none;
-  color: blue;
+  color: var(--color-accent);
   margin-left: 5px;
-  /* Optional: make back-link smaller/less intrusive */
-  /* font-size: 0.9em; */
 }
 
-/* Highlight target citation */
 .citation-item:target {
-  background-color: #ffffe0;
+  background-color: rgba(37, 99, 235, 0.08);
+  border-radius: 4px;
 }
 
-/* --- Basic Text Styles (Example) --- */
-h1, h2 { margin-bottom: 0.5em; }
-p { margin-bottom: 1em; }
+/* ─── Category filter buttons (used in HomePage) ─────────────────────────── */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.category-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text-muted);
+  transition: all 0.15s ease;
+  font-family: var(--font-sans);
+}
+
+.category-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: rgba(37, 99, 235, 0.06);
+}
+
+.category-btn.active {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .category-btn.active {
+    color: #0c0a09;
+  }
+}
+
+/* ─── Post meta tag / badge ──────────────────────────────────────────────── */
+.post-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--color-accent);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-badge {
+    background-color: rgba(96, 165, 250, 0.1);
+    color: var(--color-accent);
+    border-color: rgba(96, 165, 250, 0.2);
+  }
+}
+
+/* ─── Molstar scrollbar tweak ─────────────────────────────────────────────── */
+.msp-plugin ::-webkit-scrollbar-thumb {
+  background-color: #474748 !important;
+  border-radius: 10px;
+}

@@ -1,37 +1,89 @@
-// src/components/BlogPostPreview.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Accepts a 'post' object as a prop
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  const [year, month, day] = dateStr.split('-');
+  const d = new Date(Number(year), Number(month) - 1, Number(day));
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+
 function BlogPostPreview({ post }) {
-  if (!post) {
-    return null; // Don't render if no post data
-  }
+  if (!post) return null;
 
   return (
-    // Applying bottom margin directly to the article for spacing
     <article
       style={{
-        marginBottom: '2rem',
-        borderBottom: '1px solid #eee',
-        paddingBottom: '1rem',
+        paddingTop: '1.75rem',
+        paddingBottom: '1.75rem',
+        borderBottom: '1px solid var(--color-border)',
       }}
     >
-      {/* Added className="post-title" to the h2 */}
-      <h2 className="post-title">
-        <Link to={`/post/${post.id}`}>{post.title}</Link>
+      {/* Meta row: date + category badge */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.625rem',
+          marginBottom: '0.5rem',
+        }}
+      >
+        <time
+          dateTime={post.date}
+          style={{
+            fontSize: '0.8125rem',
+            fontFamily: "'Courier New', monospace",
+            color: 'var(--color-text-muted)',
+          }}
+        >
+          {formatDate(post.date)}
+        </time>
+        {post.category && (
+          <span className="post-badge">{post.category}</span>
+        )}
+      </div>
+
+      {/* Title */}
+      <h2
+        style={{
+          fontSize: '1.0625rem',
+          fontWeight: 600,
+          lineHeight: 1.35,
+          marginBottom: '0.5rem',
+          marginTop: 0,
+        }}
+      >
+        <Link
+          to={`/post/${post.id}`}
+          style={{
+            color: 'var(--color-text)',
+            textDecoration: 'none',
+            transition: 'color 0.15s ease',
+          }}
+          onMouseEnter={(e) => (e.target.style.color = 'var(--color-accent)')}
+          onMouseLeave={(e) => (e.target.style.color = 'var(--color-text)')}
+        >
+          {post.title}
+        </Link>
       </h2>
-      {/* Display category if it exists */}
-      {post.category && (
-        <p className="post-meta" style={{ fontStyle: 'italic' }}>
-          Category: {post.category}
+
+      {/* Excerpt */}
+      {post.excerpt && (
+        <p
+          style={{
+            fontSize: '0.9rem',
+            color: 'var(--color-text-muted)',
+            lineHeight: 1.65,
+            margin: 0,
+            display: '-webkit-box',
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
+          }}
+        >
+          {post.excerpt}
         </p>
       )}
-      <p className="post-meta">Published on: {post.date}</p>
-      <p className="post-excerpt">{post.excerpt}</p>
-      <Link to={`/post/${post.id}`} className="read-more-link">
-        Read More &raquo;
-      </Link>
     </article>
   );
 }

@@ -1,11 +1,34 @@
-// src/components/Footer.jsx
 import React from 'react';
 
 function Footer() {
-  const currentYear = new Date().getFullYear(); // Get current year dynamically
+  const currentYear = new Date().getFullYear();
   return (
-    <footer>
-      <p>&copy; {currentYear} Diego del Alamo, PhD. All rights reserved.</p>
+    <footer
+      style={{
+        borderTop: '1px solid var(--color-border)',
+        marginTop: 'auto',
+      }}
+    >
+      <div
+        style={{
+          maxWidth: '720px',
+          margin: '0 auto',
+          padding: '1.25rem 1.5rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <p
+          style={{
+            fontSize: '0.8125rem',
+            color: 'var(--color-text-muted)',
+            margin: 0,
+          }}
+        >
+          &copy; {currentYear} Diego del Alamo, PhD
+        </p>
+      </div>
     </footer>
   );
 }
