@@ -1,17 +1,20 @@
-// src/components/Layout.jsx
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-// The Layout component takes 'children' props, which will be the page components
 function Layout({ children }) {
   return (
     <>
-      {' '}
-      {/* Using Fragment to avoid adding extra div */}
       <Header />
-      <main>
-        {children} {/* Render the page content here */}
+      <main
+        style={{
+          maxWidth: '720px',
+          margin: '0 auto',
+          padding: '3rem 1.5rem 4rem',
+          flex: '1 1 auto',
+        }}
+      >
+        {children}
       </main>
       <Footer />
     </>
