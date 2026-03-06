@@ -16,7 +16,6 @@ export const post = {
   title: 'Diffusion-based structure prediction can be steered by modifying the conditioning embeddings rather than the latent space, and such embeddings can be used for subsequent iterations',
   date: '2026-03-06',
   category: 'Bio/ML',
-  excerpt: 'Diffusion-based structure prediction can be steered into specific conformations by modifying conditioning embeddings rather than the latent-space embeddings used for diffusion.',
   content: (() => {
     const ContentComponent = () => {
       const contentRef = useRef(null);

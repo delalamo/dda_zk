@@ -12,7 +12,6 @@ export const post = {
   title: 'Antibody-antigen modeling by diffusion-based structure prediction is data-limited',
   date: '2026-03-06',
   category: 'Bio/ML',
-  excerpt: 'Antibody-antigen complex prediction by diffusion-based structure prediction methods is data-limited, unlike other poor-performing tasks such as small molecule docking.',
   content: (() => {
     const ContentComponent = () => {
       const contentRef = useRef(null);
@@ -21,7 +20,7 @@ export const post = {
 
       return (
         <div className="content-container" ref={contentRef}>
-          <p><strong>Antibody-antigen complex prediction by diffusion-based structure prediction methods is data-limited</strong><sup className="footnote-ref">[<a href="#fn1" id="fnref1"></a>]</sup>. This is not true of other poor-performing tasks, such as small molecule docking. This was observed using a version of Protenix trained on four additional years of public data.</p>
+          <p><strong>Antibody-antigen complex prediction by diffusion-based structure prediction methods is data-limited</strong><sup className="footnote-ref">[<a href="#fn1" id="fnref1"></a>]</sup>. This was shown by the Protenix group, who trained another version of their flagship AlphaFold3 clone on four additional years of public data and demonstrated marked performance  improvements in this domain. However, this is not true of other poor-performing tasks, such as small molecule docking, suggesting that other tasks have more fundamental limitations.</p>
 
           <img src="/assets/post_images/2026_03_06/2026_03_06_abag_A.png" alt="Figure from Zhang et al 2026" width="700" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', height: 'auto' }} />
           <p style={{ textAlign: 'center', fontStyle: 'italic' }}>Figure from Zhang et al 2026<sup className="footnote-ref">[<a href="#fn1" id="fnref1"></a>]</sup>, with relevant section highlighted by red box; DQ SR % means percentage with DockQ ≥ 0.23.</p>

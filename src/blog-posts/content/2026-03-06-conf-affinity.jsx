@@ -14,7 +14,6 @@ export const post = {
   title: 'Protein structure prediction and design confidence metrics do not correlate with binding affinity',
   date: '2026-03-06',
   category: 'Bio/ML',
-  excerpt: 'Confidence metrics from structural modeling and design neural networks do not correlate with binding for de novo binders.',
   content: (() => {
     const ContentComponent = () => {
       const contentRef = useRef(null);

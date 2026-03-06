@@ -13,7 +13,6 @@ export const post = {
   title: 'Low-rank adaptation with even fewer parameters can operate on truncated SVD matrices, but only with reinforcement learning',
   date: '2026-03-06',
   category: 'ML',
-  excerpt: 'Low-rank adaptation can work with even fewer parameters than traditional LoRA, but only with reinforcement learning.',
   content: (() => {
     const ContentComponent = () => {
       const contentRef = useRef(null);
