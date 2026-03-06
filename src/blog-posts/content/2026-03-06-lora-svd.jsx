@@ -10,7 +10,7 @@ const footnotesConfig = [
 
 export const post = {
   id: '2026-03-06-lora-svd',
-  title: 'Low-rank adaptation with even fewer parameters can operate on truncated SVD matrices, but only with reinforcement learning',
+  title: 'Low-rank adaptation with even fewer parameters is possible with truncated SVD matrices, but only with reinforcement learning',
   date: '2026-03-06',
   category: 'ML',
   content: (() => {
