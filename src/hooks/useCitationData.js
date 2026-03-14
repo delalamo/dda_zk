@@ -32,15 +32,18 @@ export function useCitationData(footnotesConfig = [], formatOptions = {}) {
       setIsLoading(true);
       setError(null);
       try {
-        const promises = footnotesConfig.map(async (footnote) => {
+        const results = [];
+        for (const footnote of footnotesConfig) {
           if (!footnote || !footnote.id) {
              console.warn("Invalid footnote config item:", footnote);
-             return { id: footnote?.id || 'unknown', formattedHtml: '<i>Invalid footnote data object</i>' };
+             results.push({ id: footnote?.id || 'unknown', formattedHtml: '<i>Invalid footnote data object</i>' });
+             continue;
           }
 
           // --- Check for manualHtml FIRST ---
           if (footnote.manualHtml) {
-             return { id: footnote.id, formattedHtml: footnote.manualHtml };
+             results.push({ id: footnote.id, formattedHtml: footnote.manualHtml });
+             continue;
           }
           // --- END Check ---
 
@@ -58,7 +61,8 @@ export function useCitationData(footnotesConfig = [], formatOptions = {}) {
              idType = 'URL';
           } else {
              console.warn(`No valid identifier (DOI, ISBN, URL) or manualHtml found for footnote ID: ${footnote.id}`);
-             return { id: footnote.id, formattedHtml: `<i>Missing citation identifier</i>` };
+             results.push({ id: footnote.id, formattedHtml: `<i>Missing citation identifier</i>` });
+             continue;
           }
 
           try {
@@ -66,19 +70,16 @@ export function useCitationData(footnotesConfig = [], formatOptions = {}) {
             const rawFormattedHtml = citation.format('bibliography', defaultFormatOptions);
             const cleanedHtml = extractInnerHtml(rawFormattedHtml).replace(/^\s*\d+\.\s*/, '');
 
-            return {
+            results.push({
               id: footnote.id,
               identifier: identifier,
               formattedHtml: cleanedHtml,
-            };
+            });
           } catch (fetchError) {
             console.error(`Error fetching/formatting ${idType} ${identifier} for ${footnote.id}:`, fetchError);
-            // Provide a more specific error message
-            return { id: footnote.id, formattedHtml: `<i>Error loading citation for ${idType}: ${identifier}</i>` };
+            results.push({ id: footnote.id, formattedHtml: `<i>Error loading citation for ${idType}: ${identifier}</i>` });
           }
-        });
-
-        const results = await Promise.all(promises);
+        }
         setCitationsData(results);
 
       } catch (processError) {
