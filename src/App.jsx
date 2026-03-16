@@ -13,11 +13,11 @@ function App() {
       {/* Wrap all routes/pages in the Layout */}
       <MathJaxContext>
         <Routes>
-          {/* Route for the Ghost blog embed */}
-          <Route path="/" element={<GhostBlogPage />} />
+          {/* Route for the CV page (default) */}
+          <Route path="/" element={<CVPage />} />
 
-          {/* Route for the CV page */}
-          <Route path="/CV" element={<CVPage />} />
+          {/* Route for the Ghost blog embed */}
+          <Route path="/posts" element={<GhostBlogPage />} />
 
           {/* Optional: Add a catch-all 404 route */}
           <Route
