@@ -54,11 +54,6 @@ function Header() {
             {[
               { to: '/', label: 'Home', external: false },
               { to: '/CV', label: 'CV', external: false },
-              {
-                to: 'https://publish.obsidian.md/ddelalamo/Sorted_notes/Protein+structural+modeling+and+design+Zettelkasten',
-                label: 'Notes',
-                external: true,
-              },
             ].map(({ to, label, external }) => (
               <li key={label}>
                 {external ? (
