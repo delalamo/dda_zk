@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Replace this with your Ghost blog URL (e.g., "https://yourblog.ghost.io" or your custom domain)
-const GHOST_BLOG_URL = 'https://microreviews-in-protein-modeling-and-design.ghost.io/';
+const GHOST_BLOG_URL = 'https://biomlzk.ghost.io/';
 
 function GhostBlogPage() {
   return (
