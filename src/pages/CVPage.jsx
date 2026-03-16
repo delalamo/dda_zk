@@ -11,6 +11,7 @@ import './CV.css'; // Create this CSS file if you want custom styles
 function CVPage() {
   return (
     <div className="cv-content"> {/* Add a class for styling */}
+      <h1>Diego del Alamo, PhD</h1>
       {/* Render the imported Markdown string */}
       <ReactMarkdown remarkPlugins={[remarkGfm]}>
         {cvMarkdown}
