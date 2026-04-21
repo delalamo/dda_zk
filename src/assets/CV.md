@@ -25,7 +25,7 @@ Email: diego.delalamo@gmail.com
 
 ## Work and Research Experience
 ### Takeda (Cambridge, MA, USA)
-**Senior Scientist, AI/ML (Oct 2025 - Present)**
+**Senior Scientist - AI/ML (Oct 2025 - Present)**
 
 * Designing AI agents and skills for large molecule discovery and design
 * Automation of target evaluation methods for discovery of large molecule (antibodies and bispecifics)
