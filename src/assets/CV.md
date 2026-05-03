@@ -30,8 +30,8 @@ Email: diego.delalamo@gmail.com
 * Designing AI agents and skills for large molecule discovery and design
 * Automation of target evaluation methods for discovery of large molecule (antibodies and bispecifics)
 
-### GSK (Cambridge, MA, USA)
-**Principal Scientist - Protein Design & Informatics (Jul 2025 - Sep 2025)**
+### GSK (Cambridge, MA, USA and Baar, ZG, Switzerland)
+**Principal Scientist - Protein Design & Informatics (May 2022 - Sep 2025)**
 
 * Applying physics-based methods (Schrodinger FEP, Rosetta), and custom fine-tuned AI/ML tools (based on ESM, LigandMPNN, others) for de-risking of immunogenicity, solubility, thermostability, expression, patent infringement, etc. under data-poor and data-rich conditions
 * Performing rational design and multi-parameter optimization of antibodies, enzymes, and other proteins using simple and complex models (SKLearn, PyTorch) using previous-round data
@@ -39,9 +39,6 @@ Email: diego.delalamo@gmail.com
 * Building and executing pipelines in Nextflow for de novo design and filtering of antibodies and miniproteins using hallucination (BindCraft, AfDesign) and diffusion (RfDiffusion, DiffAb)
 * Writing and distributing Python scripts across GSK R&D for molecular modeling and analysis, including rapid retrieval from the AlphaFold2 database of 200 million protein models, *in silico* linker screening and ranking, and modeling of alternate conformational states of diverse proteins such as viral fusion proteins using methods like Boltz-2, Chai-1, and ESMFold
 * Preparing manuscripts for publication and presenting findings at scientific conferences
-
-### GSK (Baar, ZG, Switzerland)
-**Principal Scientist - Protein Design & Informatics (May 2022 - Jun 2025)**
 
 ### Vanderbilt University (Nashville, TN, USA)
 
