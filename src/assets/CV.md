@@ -1,10 +1,10 @@
 I'm a computational biologist and structural bioinformatician with fifteen years of research experience, including ten years in the wet lab. Currently I engineer and design biotherapeutics and protein reagents at Takeda using a combination of classical modeling and machine learning tools. My background is in experimental and computational biophysics of membrane proteins (transporters), and I am personally interested in protein dynamics and evolution.
 
-Cell: +1 (781) 597-9550
+Cell: +1 (617) 869-2425
 
 Email: diego.delalamo@gmail.com
 
-[Github](https://www.github.com/delalamo), [LinkedIn](https://www.linkedin.com/in/ddelalamo/), [Google Scholar](https://scholar.google.com/citations?user=uEf3WE4AAAAJ), [Bluesky](https://bsky.app/profile/ddelalamo.bsky.social)
+[Github](https://www.github.com/delalamo), [LinkedIn](https://www.linkedin.com/in/ddelalamo/), [Google Scholar](https://scholar.google.com/citations?user=uEf3WE4AAAAJ), [Bluesky](https://bsky.app/profile/ddelalamo.bsky.social), [Twitter/X](https://x.com/DdelAlamo)
 
 ## Skills and expertise
 **Computational structural biology**
