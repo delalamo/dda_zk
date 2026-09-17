@@ -53,7 +53,6 @@ function Header() {
           >
             {[
               { to: '/', label: 'CV', external: false },
-              { to: '/posts', label: 'Posts', external: false },
               { to: '/notes', label: 'Notes', external: false },
             ].map(({ to, label, external }) => (
               <li key={label}>
