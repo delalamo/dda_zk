@@ -90,8 +90,8 @@ export default function AntibodyComparison() {
           <div className="comparison-status" role="alert">
             <p>{error}</p>
             <button onClick={() => setAttempt((a) => a + 1)}>Try again</button>
-            <a href={`${assetRoot}/register-errors.png`}>
-              View the source figure
+            <a href={`${assetRoot}/SAbR_manuscript.pdf#page=16`}>
+              View the source figure in the full report (PDF)
             </a>
           </div>
         )}

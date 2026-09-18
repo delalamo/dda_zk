@@ -1,5 +1,3 @@
-import { Children, isValidElement } from 'react';
-import { MathJax } from 'better-react-mathjax';
 import PostMarkdown from './PostMarkdown';
 
 export default function ResearchArticle({ article, figures = {} }) {
@@ -25,9 +23,7 @@ export default function ResearchArticle({ article, figures = {} }) {
           </span>
         );
       }
-      const match = /^#(figure|table):([a-z0-9-]+)(?::([A-Z]))?$/.exec(
-        href || ''
-      );
+      const match = /^#(figure):([a-z0-9-]+)(?::([A-Z]))?$/.exec(href || '');
       if (match) {
         const target = article.targets.get(`${match[1]}:${match[2]}`);
         return (
@@ -38,17 +34,6 @@ export default function ResearchArticle({ article, figures = {} }) {
         );
       }
       return <a href={href}>{children}</a>;
-    },
-    pre({ children }) {
-      const child = Children.toArray(children)[0];
-      if (isValidElement(child) && child.props.className === 'language-math') {
-        return (
-          <div className="article-equation">
-            <MathJax>{`\\[${child.props.children}\\]`}</MathJax>
-          </div>
-        );
-      }
-      return <pre>{children}</pre>;
     },
   };
   const markdown = (source) => (
@@ -106,16 +91,18 @@ export default function ResearchArticle({ article, figures = {} }) {
             className={`article-${block.type}${FigureContent ? ' article-interactive-figure' : ''}`}
             aria-labelledby={`${block.anchor}-caption`}
           >
-            {block.type === 'figure' && FigureContent ? (
+            {FigureContent ? (
               <FigureContent />
             ) : (
-              block.type === 'figure' && (
-                <a
-                  href={block.src}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`Open ${block.label} at full size`}
-                >
+              <a
+                href={block.src || block.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={
+                  block.src ? `Open ${block.label} at full size` : undefined
+                }
+              >
+                {block.src ? (
                   <img
                     src={block.src}
                     alt={block.alt}
@@ -123,22 +110,14 @@ export default function ResearchArticle({ article, figures = {} }) {
                     height={block.height}
                     loading="lazy"
                   />
-                </a>
-              )
+                ) : (
+                  block.linkLabel
+                )}
+              </a>
             )}
             <figcaption id={`${block.anchor}-caption`}>
               <strong>{block.label}.</strong> {markdown(block.caption)}
             </figcaption>
-            {block.type === 'table' && (
-              <div
-                className="article-table-scroll"
-                role="region"
-                aria-labelledby={`${block.anchor}-caption`}
-                tabIndex={0}
-              >
-                {markdown(block.source)}
-              </div>
-            )}
           </figure>
         );
       })}

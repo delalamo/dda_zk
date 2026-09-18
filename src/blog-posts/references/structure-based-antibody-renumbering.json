@@ -1,339 +1,6 @@
 [
   {
     "type": "article-journal",
-    "title": "Antibody numbering schemes: advances, comparisons and tools for antibody engineering",
-    "author": [
-      {
-        "given": "Zirui",
-        "family": "Zhu"
-      },
-      {
-        "given": "Hossein",
-        "family": "Ashrafian"
-      },
-      {
-        "given": "Navid Mohammadian",
-        "family": "Tabrizi"
-      },
-      {
-        "given": "Emily",
-        "family": "Matas"
-      },
-      {
-        "given": "Louisa",
-        "family": "Girard"
-      },
-      {
-        "given": "Haowei",
-        "family": "Ma"
-      },
-      {
-        "given": "Edouard C",
-        "family": "Nice"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2025, 1, 10]]
-    },
-    "container-title": "Protein Engineering, Design and Selection",
-    "volume": "38",
-    "publisher": "Oxford University Press (OUP)",
-    "DOI": "10.1093/protein/gzaf005",
-    "URL": "https://doi.org/10.1093/protein/gzaf005",
-    "id": "zhu-numbering",
-    "page": "gzaf005"
-  },
-  {
-    "type": "article-journal",
-    "title": "Attempts to locate complementarity-determining residues in the variable positions of light and heavy chains",
-    "author": [
-      {
-        "given": "Elvin A.",
-        "family": "Kabat"
-      },
-      {
-        "given": "T. T.",
-        "family": "Wu"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1971, 12]]
-    },
-    "container-title": "Annals of the New York Academy of Sciences",
-    "volume": "190",
-    "issue": "1",
-    "page": "382-393",
-    "publisher": "Wiley",
-    "DOI": "10.1111/j.1749-6632.1971.tb13550.x",
-    "URL": "https://doi.org/10.1111/j.1749-6632.1971.tb13550.x",
-    "id": "kabat-wu"
-  },
-  {
-    "type": "article-journal",
-    "title": "Variable Region Sequences of Five Human Immunoglobulin Heavy Chains of the VHIII Subgroup: Definitive Identification of Four Heavy Chain Hypervariable Regions",
-    "author": [
-      {
-        "given": "J. Donald",
-        "family": "Capra"
-      },
-      {
-        "given": "J. Michael",
-        "family": "Kehoe"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1974, 3]]
-    },
-    "container-title": "Proceedings of the National Academy of Sciences",
-    "volume": "71",
-    "issue": "3",
-    "page": "845-848",
-    "publisher": "National Academy of Sciences",
-    "DOI": "10.1073/pnas.71.3.845",
-    "URL": "https://doi.org/10.1073/pnas.71.3.845",
-    "id": "capra-kehoe"
-  },
-  {
-    "type": "article-journal",
-    "title": "Canonical structures for the hypervariable regions of immunoglobulins",
-    "author": [
-      {
-        "given": "Cyrus",
-        "family": "Chothia"
-      },
-      {
-        "given": "Arthur M.",
-        "family": "Lesk"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1987, 8]]
-    },
-    "container-title": "Journal of Molecular Biology",
-    "volume": "196",
-    "issue": "4",
-    "page": "901-917",
-    "publisher": "Elsevier BV",
-    "DOI": "10.1016/0022-2836(87)90412-8",
-    "URL": "https://doi.org/10.1016/0022-2836(87)90412-8",
-    "id": "chothia-lesk"
-  },
-  {
-    "type": "article-journal",
-    "title": "Conformations of immunoglobulin hypervariable regions",
-    "author": [
-      {
-        "given": "Cyrus",
-        "family": "Chothia"
-      },
-      {
-        "given": "Arthur M.",
-        "family": "Lesk"
-      },
-      {
-        "given": "Anna",
-        "family": "Tramontano"
-      },
-      {
-        "given": "Michael",
-        "family": "Levitt"
-      },
-      {
-        "given": "Sandra J.",
-        "family": "Smith-Gill"
-      },
-      {
-        "given": "Gillian",
-        "family": "Air"
-      },
-      {
-        "given": "Steven",
-        "family": "Sheriff"
-      },
-      {
-        "given": "Eduardo A.",
-        "family": "Padlan"
-      },
-      {
-        "given": "David",
-        "family": "Davies"
-      },
-      {
-        "given": "William R.",
-        "family": "Tulip"
-      },
-      {
-        "given": "Peter M.",
-        "family": "Colman"
-      },
-      {
-        "given": "Silvia",
-        "family": "Spinelli"
-      },
-      {
-        "given": "Pedro M.",
-        "family": "Alzari"
-      },
-      {
-        "given": "Roberto J.",
-        "family": "Poljak"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1989, 12]]
-    },
-    "container-title": "Nature",
-    "volume": "342",
-    "issue": "6252",
-    "page": "877-883",
-    "publisher": "Springer Science and Business Media LLC",
-    "DOI": "10.1038/342877a0",
-    "URL": "https://doi.org/10.1038/342877a0",
-    "id": "chothia-conformations"
-  },
-  {
-    "type": "article-journal",
-    "title": "Analysis of the relation between the sequence and secondary and three-dimensional structures of immunoglobulin molecules.",
-    "author": [
-      {
-        "given": "I M",
-        "family": "Gelfand"
-      },
-      {
-        "given": "A E",
-        "family": "Kister"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1995, 11, 21]]
-    },
-    "container-title": "Proceedings of the National Academy of Sciences",
-    "volume": "92",
-    "issue": "24",
-    "page": "10884-10888",
-    "publisher": "National Academy of Sciences",
-    "DOI": "10.1073/pnas.92.24.10884",
-    "URL": "https://doi.org/10.1073/pnas.92.24.10884",
-    "id": "gelfand-kister"
-  },
-  {
-    "type": "article-journal",
-    "title": "Unique database numberings system for immunogenetic analysis",
-    "author": [
-      {
-        "given": "Marie-Paule",
-        "family": "Lefranc"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1997, 11]]
-    },
-    "container-title": "Immunology Today",
-    "volume": "18",
-    "issue": "11",
-    "page": "509",
-    "publisher": "Elsevier BV",
-    "DOI": "10.1016/S0167-5699(97)01163-8",
-    "URL": "https://doi.org/10.1016/S0167-5699(97)01163-8",
-    "id": "lefranc-imgt"
-  },
-  {
-    "type": "article-journal",
-    "title": "Yet Another Numbering Scheme for Immunoglobulin Variable Domains: An Automatic Modeling and Analysis Tool",
-    "author": [
-      {
-        "given": "Annemarie",
-        "family": "Honegger"
-      },
-      {
-        "given": "Andreas",
-        "family": "Plückthun"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2001, 6]]
-    },
-    "container-title": "Journal of Molecular Biology",
-    "volume": "309",
-    "issue": "3",
-    "page": "657-670",
-    "publisher": "Elsevier BV",
-    "DOI": "10.1006/jmbi.2001.4662",
-    "URL": "https://doi.org/10.1006/jmbi.2001.4662",
-    "id": "honegger-aho"
-  },
-  {
-    "type": "article-journal",
-    "title": "Analysis and improvements to Kabat and structurally correct numbering of antibody variable domains",
-    "author": [
-      {
-        "given": "K.R.",
-        "family": "Abhinandan"
-      },
-      {
-        "given": "Andrew C.R.",
-        "family": "Martin"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2008, 8]]
-    },
-    "container-title": "Molecular Immunology",
-    "volume": "45",
-    "issue": "14",
-    "page": "3832-3839",
-    "publisher": "Elsevier BV",
-    "DOI": "10.1016/j.molimm.2008.05.022",
-    "URL": "https://doi.org/10.1016/j.molimm.2008.05.022",
-    "id": "abhinandan-martin"
-  },
-  {
-    "type": "article-journal",
-    "title": "Prediction of VH–VL domain orientation for antibody variable domain modeling",
-    "author": [
-      {
-        "given": "Alexander",
-        "family": "Bujotzek"
-      },
-      {
-        "given": "James",
-        "family": "Dunbar"
-      },
-      {
-        "given": "Florian",
-        "family": "Lipsmeier"
-      },
-      {
-        "given": "Wolfgang",
-        "family": "Schäfer"
-      },
-      {
-        "given": "Iris",
-        "family": "Antes"
-      },
-      {
-        "given": "Charlotte M.",
-        "family": "Deane"
-      },
-      {
-        "given": "Guy",
-        "family": "Georges"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2015, 4]]
-    },
-    "container-title": "Proteins: Structure, Function, and Bioinformatics",
-    "volume": "83",
-    "issue": "4",
-    "page": "681-695",
-    "publisher": "Wiley",
-    "DOI": "10.1002/prot.24756",
-    "URL": "https://doi.org/10.1002/prot.24756",
-    "id": "bujotzek-wolfguy"
-  },
-  {
-    "type": "article-journal",
     "title": "ANARCI: antigen receptor numbering and receptor classification",
     "author": [
       {
@@ -356,296 +23,6 @@
     "DOI": "10.1093/bioinformatics/btv552",
     "URL": "https://doi.org/10.1093/bioinformatics/btv552",
     "id": "dunbar-anarci"
-  },
-  {
-    "type": "article-journal",
-    "title": "ANARCII enables alignment-free antigen receptor numbering using a generalised language model",
-    "author": [
-      {
-        "given": "Alexander",
-        "family": "Greenshields-Watson"
-      },
-      {
-        "given": "Parth",
-        "family": "Agarwal"
-      },
-      {
-        "given": "Sarah A.",
-        "family": "Robinson"
-      },
-      {
-        "given": "Benjamin Heathcote",
-        "family": "Williams"
-      },
-      {
-        "given": "Gemma L.",
-        "family": "Gordon"
-      },
-      {
-        "given": "Henriette L.",
-        "family": "Capel"
-      },
-      {
-        "given": "Yushi",
-        "family": "Li"
-      },
-      {
-        "given": "Fabian C.",
-        "family": "Spoendlin"
-      },
-      {
-        "given": "Broncio",
-        "family": "Aguilar-Sanjuan"
-      },
-      {
-        "given": "Fergus",
-        "family": "Boyles"
-      },
-      {
-        "given": "Charlotte M.",
-        "family": "Deane"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2026, 5, 21]]
-    },
-    "container-title": "Communications Biology",
-    "volume": "9",
-    "issue": "1",
-    "publisher": "Springer Science and Business Media LLC",
-    "DOI": "10.1038/s42003-026-10186-z",
-    "URL": "https://doi.org/10.1038/s42003-026-10186-z",
-    "id": "greenshields-anarcii",
-    "page": "1085"
-  },
-  {
-    "type": "article-journal",
-    "title": "Antibody Structure and Function: The Basis for Engineering Therapeutics",
-    "author": [
-      {
-        "given": "Mark L.",
-        "family": "Chiu"
-      },
-      {
-        "given": "Dennis R.",
-        "family": "Goulet"
-      },
-      {
-        "given": "Alexey",
-        "family": "Teplyakov"
-      },
-      {
-        "given": "Gary L.",
-        "family": "Gilliland"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2019, 12, 3]]
-    },
-    "container-title": "Antibodies",
-    "volume": "8",
-    "issue": "4",
-    "page": "55",
-    "publisher": "MDPI AG",
-    "DOI": "10.3390/antib8040055",
-    "URL": "https://doi.org/10.3390/antib8040055",
-    "id": "chiu-antibodies"
-  },
-  {
-    "type": "chapter",
-    "title": "Integrated methods for the construction of three-dimensional models and computational probing of structure-function relations in G protein-coupled receptors",
-    "author": [
-      {
-        "given": "Juan A.",
-        "family": "Ballesteros"
-      },
-      {
-        "given": "Harel",
-        "family": "Weinstein"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1995]]
-    },
-    "container-title": "Receptor Molecular Biology",
-    "page": "366-428",
-    "publisher": "Elsevier",
-    "DOI": "10.1016/S1043-9471(05)80049-7",
-    "URL": "https://doi.org/10.1016/S1043-9471(05)80049-7",
-    "id": "ballesteros-weinstein",
-    "editor": [
-      {
-        "given": "Stuart C.",
-        "family": "Sealfon"
-      }
-    ],
-    "volume": "25",
-    "collection-title": "Methods in Neurosciences"
-  },
-  {
-    "type": "article-journal",
-    "title": "KLIFS: A Knowledge-Based Structural Database To Navigate Kinase–Ligand Interaction Space",
-    "author": [
-      {
-        "given": "Oscar P. J.",
-        "family": "van Linden"
-      },
-      {
-        "given": "Albert J.",
-        "family": "Kooistra"
-      },
-      {
-        "given": "Rob",
-        "family": "Leurs"
-      },
-      {
-        "given": "Iwan J. P.",
-        "family": "de Esch"
-      },
-      {
-        "given": "Chris",
-        "family": "de Graaf"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2014, 1, 23]]
-    },
-    "container-title": "Journal of Medicinal Chemistry",
-    "volume": "57",
-    "issue": "2",
-    "page": "249-277",
-    "publisher": "American Chemical Society (ACS)",
-    "DOI": "10.1021/jm400378w",
-    "URL": "https://doi.org/10.1021/jm400378w",
-    "id": "vanlinden-klifs"
-  },
-  {
-    "type": "article-journal",
-    "title": "Comparative modeling methods: Application to the family of the mammalian serine proteases",
-    "author": [
-      {
-        "given": "Jonathan",
-        "family": "Greer"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1990, 1]]
-    },
-    "container-title": "Proteins: Structure, Function, and Bioinformatics",
-    "volume": "7",
-    "issue": "4",
-    "page": "317-334",
-    "publisher": "Wiley",
-    "DOI": "10.1002/prot.340070404",
-    "URL": "https://doi.org/10.1002/prot.340070404",
-    "id": "greer-proteases"
-  },
-  {
-    "type": "article-journal",
-    "title": "RIOT—Rapid Immunoglobulin Overview Tool—annotation of nucleotide and amino acid immunoglobulin sequences using an open germline database",
-    "author": [
-      {
-        "given": "Paweł",
-        "family": "Dudzic"
-      },
-      {
-        "given": "Bartosz",
-        "family": "Janusz"
-      },
-      {
-        "given": "Tadeusz",
-        "family": "Satława"
-      },
-      {
-        "given": "Dawid",
-        "family": "Chomicz"
-      },
-      {
-        "given": "Tomasz",
-        "family": "Gawłowski"
-      },
-      {
-        "given": "Rafał",
-        "family": "Grabowski"
-      },
-      {
-        "given": "Przemek",
-        "family": "Jóźwiak"
-      },
-      {
-        "given": "Mateusz",
-        "family": "Tarkowski"
-      },
-      {
-        "given": "Maciej",
-        "family": "Mycielski"
-      },
-      {
-        "given": "Sonia",
-        "family": "Wróbel"
-      },
-      {
-        "given": "Konrad",
-        "family": "Krawczyk"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2025]]
-    },
-    "container-title": "Briefings in Bioinformatics",
-    "volume": "26",
-    "issue": "1",
-    "publisher": "Oxford University Press (OUP)",
-    "DOI": "10.1093/bib/bbae632",
-    "URL": "https://doi.org/10.1093/bib/bbae632",
-    "id": "dudzic-riot",
-    "page": "bbae632"
-  },
-  {
-    "type": "article-journal",
-    "title": "For antibody sequence generative modeling, mixture models may be all you need",
-    "author": [
-      {
-        "given": "Jonathan",
-        "family": "Parkinson"
-      },
-      {
-        "given": "Wei",
-        "family": "Wang"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2024, 5, 2]]
-    },
-    "container-title": "Bioinformatics",
-    "volume": "40",
-    "issue": "5",
-    "publisher": "Oxford University Press (OUP)",
-    "DOI": "10.1093/bioinformatics/btae278",
-    "URL": "https://doi.org/10.1093/bioinformatics/btae278",
-    "id": "parkinson-antpack",
-    "page": "btae278"
-  },
-  {
-    "type": "article-journal",
-    "title": "Accelerated Profile HMM Searches",
-    "author": [
-      {
-        "given": "Sean R.",
-        "family": "Eddy"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2011, 10, 20]]
-    },
-    "container-title": "PLoS Computational Biology",
-    "volume": "7",
-    "issue": "10",
-    "page": "e1002195",
-    "publisher": "Public Library of Science (PLoS)",
-    "DOI": "10.1371/journal.pcbi.1002195",
-    "URL": "https://doi.org/10.1371/journal.pcbi.1002195",
-    "id": "eddy-hmmer"
   },
   {
     "type": "article-journal",
@@ -698,73 +75,403 @@
   },
   {
     "type": "article-journal",
-    "title": "TM-align: a protein structure alignment algorithm based on the TM-score",
+    "title": "Atomically accurate de novo design of antibodies with RFdiffusion",
     "author": [
       {
-        "given": "Yang",
-        "family": "Zhang"
+        "given": "Nathaniel R.",
+        "family": "Bennett"
       },
       {
-        "given": "Jeffrey",
-        "family": "Skolnick"
+        "given": "Joseph L.",
+        "family": "Watson"
+      },
+      {
+        "given": "Robert J.",
+        "family": "Ragotte"
+      },
+      {
+        "given": "Andrew J.",
+        "family": "Borst"
+      },
+      {
+        "given": "DéJenaé L.",
+        "family": "See"
+      },
+      {
+        "given": "Connor",
+        "family": "Weidle"
+      },
+      {
+        "given": "Riti",
+        "family": "Biswas"
+      },
+      {
+        "given": "Yutong",
+        "family": "Yu"
+      },
+      {
+        "given": "Ellen L.",
+        "family": "Shrock"
+      },
+      {
+        "given": "Russell",
+        "family": "Ault"
+      },
+      {
+        "given": "Philip J. Y.",
+        "family": "Leung"
+      },
+      {
+        "given": "Buwei",
+        "family": "Huang"
+      },
+      {
+        "given": "Inna",
+        "family": "Goreshnik"
+      },
+      {
+        "given": "John",
+        "family": "Tam"
+      },
+      {
+        "given": "Kenneth D.",
+        "family": "Carr"
+      },
+      {
+        "given": "Benedikt",
+        "family": "Singer"
+      },
+      {
+        "given": "Cameron",
+        "family": "Criswell"
+      },
+      {
+        "given": "Basile I. M.",
+        "family": "Wicky"
+      },
+      {
+        "given": "Dionne",
+        "family": "Vafeados"
+      },
+      {
+        "given": "Mariana",
+        "family": "Garcia Sanchez"
+      },
+      {
+        "given": "Ho Min",
+        "family": "Kim"
+      },
+      {
+        "given": "Susana",
+        "family": "Vázquez Torres"
+      },
+      {
+        "given": "Sidney",
+        "family": "Chan"
+      },
+      {
+        "given": "Shirley M.",
+        "family": "Sun"
+      },
+      {
+        "given": "Timothy T.",
+        "family": "Spear"
+      },
+      {
+        "given": "Yi",
+        "family": "Sun"
+      },
+      {
+        "given": "Keelan",
+        "family": "O’Reilly"
+      },
+      {
+        "given": "John M.",
+        "family": "Maris"
+      },
+      {
+        "given": "Nikolaos G.",
+        "family": "Sgourakis"
+      },
+      {
+        "given": "Roman A.",
+        "family": "Melnyk"
+      },
+      {
+        "given": "Chang C.",
+        "family": "Liu"
+      },
+      {
+        "given": "David",
+        "family": "Baker"
       }
     ],
     "issued": {
-      "date-parts": [[2005, 4, 11]]
+      "date-parts": [[2026, 1, 1]]
     },
-    "container-title": "Nucleic Acids Research",
-    "volume": "33",
-    "issue": "7",
-    "page": "2302-2309",
-    "publisher": "Oxford University Press (OUP)",
-    "DOI": "10.1093/nar/gki524",
-    "URL": "https://doi.org/10.1093/nar/gki524",
-    "id": "zhang-tmalign"
+    "container-title": "Nature",
+    "volume": "649",
+    "issue": "8095",
+    "page": "183-193",
+    "publisher": "Springer Science and Business Media LLC",
+    "DOI": "10.1038/s41586-025-09721-5",
+    "URL": "https://doi.org/10.1038/s41586-025-09721-5",
+    "id": "bennett-rfantibody"
   },
   {
+    "id": "chai-discovery-chai2",
     "type": "article-journal",
-    "title": "IgStrand: A universal residue numbering scheme for the immunoglobulin-fold (Ig-fold) to study Ig-proteomes and Ig-interactomes",
+    "title": "Zero-shot antibody design in a 24-well plate",
+    "issued": {
+      "date-parts": [[2025, 7, 6]]
+    },
+    "publisher": "openRxiv",
+    "DOI": "10.1101/2025.07.05.663018",
     "author": [
       {
-        "given": "Caesar",
-        "family": "Tawfeeq"
+        "literal": "Chai Discovery Team"
       },
       {
-        "given": "Jiyao",
-        "family": "Wang"
+        "family": "Boitreaud",
+        "given": "Jacques"
       },
       {
-        "given": "Umesh",
-        "family": "Khaniya"
+        "family": "Dent",
+        "given": "Jack"
       },
       {
-        "given": "Thomas",
-        "family": "Madej"
+        "family": "Geisz",
+        "given": "Danny"
       },
       {
-        "given": "James",
-        "family": "Song"
+        "family": "McPartlon",
+        "given": "Matthew"
       },
       {
-        "given": "Ravinder",
-        "family": "Abrol"
+        "family": "Meier",
+        "given": "Joshua"
       },
       {
-        "given": "Philippe",
-        "family": "Youkharibache"
+        "family": "Qiao",
+        "given": "Zhuoran"
+      },
+      {
+        "family": "Rogozhnikov",
+        "given": "Alex"
+      },
+      {
+        "family": "Rollins",
+        "given": "Nathan"
+      },
+      {
+        "family": "Wollenhaupt",
+        "given": "Paul"
+      },
+      {
+        "family": "Wu",
+        "given": "Kevin"
+      }
+    ],
+    "URL": "https://doi.org/10.1101/2025.07.05.663018",
+    "container-title": "bioRxiv [preprint]"
+  },
+  {
+    "id": "nabla-jam2",
+    "type": "report",
+    "title": "JAM-2: Fully computational design of drug-like antibodies with high success rates",
+    "author": [
+      {
+        "literal": "Nabla Bio"
       }
     ],
     "issued": {
-      "date-parts": [[2025, 4, 14]]
+      "date-parts": [[2025]]
     },
-    "container-title": "PLOS Computational Biology",
-    "volume": "21",
-    "issue": "4",
-    "page": "e1012813",
-    "publisher": "Public Library of Science (PLoS)",
-    "DOI": "10.1371/journal.pcbi.1012813",
-    "URL": "https://doi.org/10.1371/journal.pcbi.1012813",
-    "id": "tawfeeq-igstrand"
+    "publisher": "Nabla Bio",
+    "genre": "Technical report",
+    "URL": "https://nabla-public.s3.us-east-1.amazonaws.com/2025_Nabla_JAM2.pdf"
+  },
+  {
+    "id": "latent-labs-latentx2",
+    "type": "article-journal",
+    "title": "Drug-like antibodies with low immunogenicity in human panels designed with Latent-X2",
+    "issued": {
+      "date-parts": [[2025]]
+    },
+    "publisher": "arXiv",
+    "DOI": "10.48550/ARXIV.2512.20263",
+    "author": [
+      {
+        "literal": "Latent Labs Team"
+      },
+      {
+        "family": "Kenlay",
+        "given": "Henry"
+      },
+      {
+        "family": "Pretorius",
+        "given": "Daniella"
+      },
+      {
+        "family": "Crabbé",
+        "given": "Jonathan"
+      },
+      {
+        "family": "Bridgland",
+        "given": "Alex"
+      },
+      {
+        "family": "Schmon",
+        "given": "Sebastian M."
+      },
+      {
+        "family": "Hilmkil",
+        "given": "Agrin"
+      },
+      {
+        "family": "Vuckovic",
+        "given": "James"
+      },
+      {
+        "family": "Mathis",
+        "given": "Simon"
+      },
+      {
+        "family": "Matteson",
+        "given": "Tomas"
+      },
+      {
+        "family": "Bartke-Croughan",
+        "given": "Rebecca"
+      },
+      {
+        "family": "Motmaen",
+        "given": "Amir"
+      },
+      {
+        "family": "Rombach",
+        "given": "Robin"
+      },
+      {
+        "family": "Vlachynská",
+        "given": "Mária"
+      },
+      {
+        "family": "Nelson",
+        "given": "Alexander W. R."
+      },
+      {
+        "family": "Yuan",
+        "given": "David"
+      },
+      {
+        "family": "Obika",
+        "given": "Annette"
+      },
+      {
+        "family": "Kohl",
+        "given": "Simon A. A."
+      }
+    ],
+    "URL": "https://doi.org/10.48550/ARXIV.2512.20263",
+    "container-title": "arXiv [preprint]"
+  },
+  {
+    "id": "luo-diffab",
+    "type": "paper-conference",
+    "title": "Antigen-Specific Antibody Design and Optimization with Diffusion-Based Generative Models for Protein Structures",
+    "issued": {
+      "date-parts": [[2022]]
+    },
+    "container-title": "Advances in Neural Information Processing Systems 35",
+    "page": "9754-9767",
+    "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+    "DOI": "10.52202/068431-0709",
+    "author": [
+      {
+        "family": "Luo",
+        "given": "Shitong"
+      },
+      {
+        "family": "Su",
+        "given": "Yufeng"
+      },
+      {
+        "family": "Peng",
+        "given": "Xingang"
+      },
+      {
+        "family": "Wang",
+        "given": "Sheng"
+      },
+      {
+        "family": "Peng",
+        "given": "Jian"
+      },
+      {
+        "family": "Ma",
+        "given": "Jianzhu"
+      }
+    ],
+    "URL": "https://doi.org/10.52202/068431-0709"
+  },
+  {
+    "id": "mille-fragoso-germinal",
+    "type": "article-journal",
+    "title": "Efficient generation of epitope-targeted antibodies with Germinal",
+    "issued": {
+      "date-parts": [[2026, 6, 23]]
+    },
+    "container-title": "Nature Biotechnology",
+    "publisher": "Springer Science and Business Media LLC",
+    "DOI": "10.1038/s41587-026-03187-0",
+    "author": [
+      {
+        "family": "Mille-Fragoso",
+        "given": "Luis S."
+      },
+      {
+        "family": "Driscoll",
+        "given": "Claudia L."
+      },
+      {
+        "family": "Wang",
+        "given": "John N."
+      },
+      {
+        "family": "Dai",
+        "given": "Haoyu"
+      },
+      {
+        "family": "Widatalla",
+        "given": "Talal"
+      },
+      {
+        "family": "Zhang",
+        "given": "Jim L."
+      },
+      {
+        "family": "Zhang",
+        "given": "Xiaowei"
+      },
+      {
+        "family": "Rao",
+        "given": "Bing"
+      },
+      {
+        "family": "Feng",
+        "given": "Liang"
+      },
+      {
+        "family": "Hie",
+        "given": "Brian L."
+      },
+      {
+        "family": "Gao",
+        "given": "Xiaojing J."
+      }
+    ],
+    "URL": "https://doi.org/10.1038/s41587-026-03187-0"
   },
   {
     "type": "article",
@@ -923,778 +630,6 @@
   },
   {
     "type": "article-journal",
-    "title": "Fast and accurate protein structure search with Foldseek",
-    "author": [
-      {
-        "given": "Michel",
-        "family": "van Kempen"
-      },
-      {
-        "given": "Stephanie S.",
-        "family": "Kim"
-      },
-      {
-        "given": "Charlotte",
-        "family": "Tumescheit"
-      },
-      {
-        "given": "Milot",
-        "family": "Mirdita"
-      },
-      {
-        "given": "Jeongjae",
-        "family": "Lee"
-      },
-      {
-        "given": "Cameron L. M.",
-        "family": "Gilchrist"
-      },
-      {
-        "given": "Johannes",
-        "family": "Söding"
-      },
-      {
-        "given": "Martin",
-        "family": "Steinegger"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2024, 2]]
-    },
-    "container-title": "Nature Biotechnology",
-    "volume": "42",
-    "issue": "2",
-    "page": "243-246",
-    "publisher": "Springer Science and Business Media LLC",
-    "DOI": "10.1038/s41587-023-01773-0",
-    "URL": "https://doi.org/10.1038/s41587-023-01773-0",
-    "id": "vankempen-foldseek"
-  },
-  {
-    "type": "article-journal",
-    "title": "End-to-end learning of multiple sequence alignments with differentiable Smith–Waterman",
-    "author": [
-      {
-        "given": "Samantha",
-        "family": "Petti"
-      },
-      {
-        "given": "Nicholas",
-        "family": "Bhattacharya"
-      },
-      {
-        "given": "Roshan",
-        "family": "Rao"
-      },
-      {
-        "given": "Justas",
-        "family": "Dauparas"
-      },
-      {
-        "given": "Neil",
-        "family": "Thomas"
-      },
-      {
-        "given": "Juannan",
-        "family": "Zhou"
-      },
-      {
-        "given": "Alexander M",
-        "family": "Rush"
-      },
-      {
-        "given": "Peter",
-        "family": "Koo"
-      },
-      {
-        "given": "Sergey",
-        "family": "Ovchinnikov"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2023, 1, 1]]
-    },
-    "container-title": "Bioinformatics",
-    "volume": "39",
-    "issue": "1",
-    "publisher": "Oxford University Press (OUP)",
-    "DOI": "10.1093/bioinformatics/btac724",
-    "URL": "https://doi.org/10.1093/bioinformatics/btac724",
-    "id": "petti-smith-waterman",
-    "page": "btac724"
-  },
-  {
-    "type": "article-journal",
-    "title": "ImmuneBuilder: Deep-Learning models for predicting the structures of immune proteins",
-    "author": [
-      {
-        "given": "Brennan",
-        "family": "Abanades"
-      },
-      {
-        "given": "Wing Ki",
-        "family": "Wong"
-      },
-      {
-        "given": "Fergus",
-        "family": "Boyles"
-      },
-      {
-        "given": "Guy",
-        "family": "Georges"
-      },
-      {
-        "given": "Alexander",
-        "family": "Bujotzek"
-      },
-      {
-        "given": "Charlotte M.",
-        "family": "Deane"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2023, 5, 29]]
-    },
-    "container-title": "Communications Biology",
-    "volume": "6",
-    "issue": "1",
-    "publisher": "Springer Science and Business Media LLC",
-    "DOI": "10.1038/s42003-023-04927-7",
-    "URL": "https://doi.org/10.1038/s42003-023-04927-7",
-    "id": "abanades-immunebuilder",
-    "page": "575"
-  },
-  {
-    "type": "dataset",
-    "title": "ImmuneBuilder: Deep-Learning models for predicting the structures of immune proteins.",
-    "author": [
-      {
-        "family": "Abanades",
-        "given": "Brennan"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2022, 11, 1]]
-    },
-    "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.7258553",
-    "URL": "https://doi.org/10.5281/zenodo.7258553",
-    "version": "0.0.1",
-    "id": "abanades-dataset"
-  },
-  {
-    "type": "article-journal",
-    "title": "MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets",
-    "author": [
-      {
-        "given": "Martin",
-        "family": "Steinegger"
-      },
-      {
-        "given": "Johannes",
-        "family": "Söding"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2017, 11]]
-    },
-    "container-title": "Nature Biotechnology",
-    "volume": "35",
-    "issue": "11",
-    "page": "1026-1028",
-    "publisher": "Springer Science and Business Media LLC",
-    "DOI": "10.1038/nbt.3988",
-    "URL": "https://doi.org/10.1038/nbt.3988",
-    "id": "steinegger-mmseqs"
-  },
-  {
-    "type": "article-journal",
-    "title": "IMGT/3Dstructure-DB and IMGT/StructuralQuery, a database and a tool for immunoglobulin, T cell receptor and MHC structural data",
-    "author": [
-      {
-        "given": "Quentin",
-        "family": "Kaas"
-      },
-      {
-        "given": "Manuel",
-        "family": "Ruiz"
-      },
-      {
-        "given": "Marie-Paule",
-        "family": "Lefranc"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2004, 1, 1]]
-    },
-    "container-title": "Nucleic Acids Research",
-    "volume": "32",
-    "issue": "suppl. 1",
-    "page": "D208-D210",
-    "publisher": "Oxford University Press (OUP)",
-    "DOI": "10.1093/nar/gkh042",
-    "URL": "https://doi.org/10.1093/nar/gkh042",
-    "id": "kaas-imgt"
-  },
-  {
-    "type": "article-journal",
-    "title": "SCOPe: Structural Classification of Proteins—extended, integrating SCOP and ASTRAL data and classification of new structures",
-    "author": [
-      {
-        "given": "Naomi K.",
-        "family": "Fox"
-      },
-      {
-        "given": "Steven E.",
-        "family": "Brenner"
-      },
-      {
-        "given": "John-Marc",
-        "family": "Chandonia"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2014, 1]]
-    },
-    "container-title": "Nucleic Acids Research",
-    "volume": "42",
-    "issue": "D1",
-    "page": "D304-D309",
-    "publisher": "Oxford University Press (OUP)",
-    "DOI": "10.1093/nar/gkt1240",
-    "URL": "https://doi.org/10.1093/nar/gkt1240",
-    "id": "fox-scope"
-  },
-  {
-    "type": "article-journal",
-    "title": "Single-Chain Antigen-Binding Proteins",
-    "author": [
-      {
-        "given": "Robert E.",
-        "family": "Bird"
-      },
-      {
-        "given": "Karl D.",
-        "family": "Hardman"
-      },
-      {
-        "given": "James W.",
-        "family": "Jacobson"
-      },
-      {
-        "given": "Syd",
-        "family": "Johnson"
-      },
-      {
-        "given": "Bennett M.",
-        "family": "Kaufman"
-      },
-      {
-        "given": "Shwu-Maan",
-        "family": "Lee"
-      },
-      {
-        "given": "Timothy",
-        "family": "Lee"
-      },
-      {
-        "given": "Sharon H.",
-        "family": "Pope"
-      },
-      {
-        "given": "Gary S.",
-        "family": "Riordan"
-      },
-      {
-        "given": "Marc",
-        "family": "Whitlow"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1988, 10, 21]]
-    },
-    "container-title": "Science",
-    "volume": "242",
-    "issue": "4877",
-    "page": "423-426",
-    "publisher": "American Association for the Advancement of Science (AAAS)",
-    "DOI": "10.1126/science.3140379",
-    "URL": "https://doi.org/10.1126/science.3140379",
-    "id": "bird-scfv"
-  },
-  {
-    "type": "article-journal",
-    "title": "OpenMM 7: Rapid development of high performance algorithms for molecular dynamics",
-    "author": [
-      {
-        "given": "Peter",
-        "family": "Eastman"
-      },
-      {
-        "given": "Jason",
-        "family": "Swails"
-      },
-      {
-        "given": "John D.",
-        "family": "Chodera"
-      },
-      {
-        "given": "Robert T.",
-        "family": "McGibbon"
-      },
-      {
-        "given": "Yutong",
-        "family": "Zhao"
-      },
-      {
-        "given": "Kyle A.",
-        "family": "Beauchamp"
-      },
-      {
-        "given": "Lee-Ping",
-        "family": "Wang"
-      },
-      {
-        "given": "Andrew C.",
-        "family": "Simmonett"
-      },
-      {
-        "given": "Matthew P.",
-        "family": "Harrigan"
-      },
-      {
-        "given": "Chaya D.",
-        "family": "Stern"
-      },
-      {
-        "given": "Rafal P.",
-        "family": "Wiewiora"
-      },
-      {
-        "given": "Bernard R.",
-        "family": "Brooks"
-      },
-      {
-        "given": "Vijay S.",
-        "family": "Pande"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2017, 7, 26]]
-    },
-    "container-title": "PLOS Computational Biology",
-    "volume": "13",
-    "issue": "7",
-    "page": "e1005659",
-    "publisher": "Public Library of Science (PLoS)",
-    "DOI": "10.1371/journal.pcbi.1005659",
-    "URL": "https://doi.org/10.1371/journal.pcbi.1005659",
-    "id": "eastman-openmm"
-  },
-  {
-    "type": "article-journal",
-    "title": "Crystal Structure of the β Chain of a T Cell Antigen Receptor",
-    "author": [
-      {
-        "given": "Graham A.",
-        "family": "Bentley"
-      },
-      {
-        "given": "Ginette",
-        "family": "Boulot"
-      },
-      {
-        "given": "Klaus",
-        "family": "Karjalainen"
-      },
-      {
-        "given": "Roy A.",
-        "family": "Mariuzza"
-      }
-    ],
-    "issued": {
-      "date-parts": [[1995, 3, 31]]
-    },
-    "container-title": "Science",
-    "volume": "267",
-    "issue": "5206",
-    "page": "1984-1987",
-    "publisher": "American Association for the Advancement of Science (AAAS)",
-    "DOI": "10.1126/science.7701320",
-    "URL": "https://doi.org/10.1126/science.7701320",
-    "id": "bentley-tcr"
-  },
-  {
-    "type": "article-journal",
-    "title": "Structural evidence for evolution of shark Ig new antigen receptor variable domain antibodies from a cell-surface receptor",
-    "author": [
-      {
-        "given": "V. A.",
-        "family": "Streltsov"
-      },
-      {
-        "given": "J. N.",
-        "family": "Varghese"
-      },
-      {
-        "given": "J. A.",
-        "family": "Carmichael"
-      },
-      {
-        "given": "R. A.",
-        "family": "Irving"
-      },
-      {
-        "given": "P. J.",
-        "family": "Hudson"
-      },
-      {
-        "given": "S. D.",
-        "family": "Nuttall"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2004, 8, 24]]
-    },
-    "container-title": "Proceedings of the National Academy of Sciences",
-    "volume": "101",
-    "issue": "34",
-    "page": "12444-12449",
-    "publisher": "National Academy of Sciences",
-    "DOI": "10.1073/pnas.0403509101",
-    "URL": "https://doi.org/10.1073/pnas.0403509101",
-    "id": "streltsov-vnar"
-  },
-  {
-    "type": "article-journal",
-    "title": "Camelid and shark single domain antibodies: structural features and therapeutic potential",
-    "author": [
-      {
-        "given": "Doreen",
-        "family": "Könning"
-      },
-      {
-        "given": "Stefan",
-        "family": "Zielonka"
-      },
-      {
-        "given": "Julius",
-        "family": "Grzeschik"
-      },
-      {
-        "given": "Martin",
-        "family": "Empting"
-      },
-      {
-        "given": "Bernhard",
-        "family": "Valldorf"
-      },
-      {
-        "given": "Simon",
-        "family": "Krah"
-      },
-      {
-        "given": "Christian",
-        "family": "Schröter"
-      },
-      {
-        "given": "Carolin",
-        "family": "Sellmann"
-      },
-      {
-        "given": "Björn",
-        "family": "Hock"
-      },
-      {
-        "given": "Harald",
-        "family": "Kolmar"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2017, 8]]
-    },
-    "container-title": "Current Opinion in Structural Biology",
-    "volume": "45",
-    "page": "10-16",
-    "publisher": "Elsevier BV",
-    "DOI": "10.1016/j.sbi.2016.10.019",
-    "URL": "https://doi.org/10.1016/j.sbi.2016.10.019",
-    "id": "konning-single-domain"
-  },
-  {
-    "type": "article-journal",
-    "title": "Reshaping Antibody Diversity",
-    "author": [
-      {
-        "given": "Feng",
-        "family": "Wang"
-      },
-      {
-        "given": "Damian C.",
-        "family": "Ekiert"
-      },
-      {
-        "given": "Insha",
-        "family": "Ahmad"
-      },
-      {
-        "given": "Wenli",
-        "family": "Yu"
-      },
-      {
-        "given": "Yong",
-        "family": "Zhang"
-      },
-      {
-        "given": "Omar",
-        "family": "Bazirgan"
-      },
-      {
-        "given": "Ali",
-        "family": "Torkamani"
-      },
-      {
-        "given": "Terje",
-        "family": "Raudsepp"
-      },
-      {
-        "given": "Waithaka",
-        "family": "Mwangi"
-      },
-      {
-        "given": "Michael F.",
-        "family": "Criscitiello"
-      },
-      {
-        "given": "Ian A.",
-        "family": "Wilson"
-      },
-      {
-        "given": "Peter G.",
-        "family": "Schultz"
-      },
-      {
-        "given": "Vaughn V.",
-        "family": "Smider"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2013, 6]]
-    },
-    "container-title": "Cell",
-    "volume": "153",
-    "issue": "6",
-    "page": "1379-1393",
-    "publisher": "Elsevier BV",
-    "DOI": "10.1016/j.cell.2013.04.049",
-    "URL": "https://doi.org/10.1016/j.cell.2013.04.049",
-    "id": "wang-bovine"
-  },
-  {
-    "type": "article-journal",
-    "title": "Bos taurus ultralong CDR H3 antibodies",
-    "author": [
-      {
-        "given": "Melissa L",
-        "family": "Vadnais"
-      },
-      {
-        "given": "Vaughn V",
-        "family": "Smider"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2016, 6]]
-    },
-    "container-title": "Current Opinion in Structural Biology",
-    "volume": "38",
-    "page": "62-67",
-    "publisher": "Elsevier BV",
-    "DOI": "10.1016/j.sbi.2016.05.004",
-    "URL": "https://doi.org/10.1016/j.sbi.2016.05.004",
-    "id": "vadnais-bovine"
-  },
-  {
-    "type": "article-journal",
-    "title": "Atomically accurate de novo design of antibodies with RFdiffusion",
-    "author": [
-      {
-        "given": "Nathaniel R.",
-        "family": "Bennett"
-      },
-      {
-        "given": "Joseph L.",
-        "family": "Watson"
-      },
-      {
-        "given": "Robert J.",
-        "family": "Ragotte"
-      },
-      {
-        "given": "Andrew J.",
-        "family": "Borst"
-      },
-      {
-        "given": "DéJenaé L.",
-        "family": "See"
-      },
-      {
-        "given": "Connor",
-        "family": "Weidle"
-      },
-      {
-        "given": "Riti",
-        "family": "Biswas"
-      },
-      {
-        "given": "Yutong",
-        "family": "Yu"
-      },
-      {
-        "given": "Ellen L.",
-        "family": "Shrock"
-      },
-      {
-        "given": "Russell",
-        "family": "Ault"
-      },
-      {
-        "given": "Philip J. Y.",
-        "family": "Leung"
-      },
-      {
-        "given": "Buwei",
-        "family": "Huang"
-      },
-      {
-        "given": "Inna",
-        "family": "Goreshnik"
-      },
-      {
-        "given": "John",
-        "family": "Tam"
-      },
-      {
-        "given": "Kenneth D.",
-        "family": "Carr"
-      },
-      {
-        "given": "Benedikt",
-        "family": "Singer"
-      },
-      {
-        "given": "Cameron",
-        "family": "Criswell"
-      },
-      {
-        "given": "Basile I. M.",
-        "family": "Wicky"
-      },
-      {
-        "given": "Dionne",
-        "family": "Vafeados"
-      },
-      {
-        "given": "Mariana",
-        "family": "Garcia Sanchez"
-      },
-      {
-        "given": "Ho Min",
-        "family": "Kim"
-      },
-      {
-        "given": "Susana",
-        "family": "Vázquez Torres"
-      },
-      {
-        "given": "Sidney",
-        "family": "Chan"
-      },
-      {
-        "given": "Shirley M.",
-        "family": "Sun"
-      },
-      {
-        "given": "Timothy T.",
-        "family": "Spear"
-      },
-      {
-        "given": "Yi",
-        "family": "Sun"
-      },
-      {
-        "given": "Keelan",
-        "family": "O’Reilly"
-      },
-      {
-        "given": "John M.",
-        "family": "Maris"
-      },
-      {
-        "given": "Nikolaos G.",
-        "family": "Sgourakis"
-      },
-      {
-        "given": "Roman A.",
-        "family": "Melnyk"
-      },
-      {
-        "given": "Chang C.",
-        "family": "Liu"
-      },
-      {
-        "given": "David",
-        "family": "Baker"
-      }
-    ],
-    "issued": {
-      "date-parts": [[2026, 1, 1]]
-    },
-    "container-title": "Nature",
-    "volume": "649",
-    "issue": "8095",
-    "page": "183-193",
-    "publisher": "Springer Science and Business Media LLC",
-    "DOI": "10.1038/s41586-025-09721-5",
-    "URL": "https://doi.org/10.1038/s41586-025-09721-5",
-    "id": "bennett-rfantibody"
-  },
-  {
-    "type": "article",
-    "title": "Inverse folding for antibody sequence design using deep learning",
-    "author": [
-      {
-        "family": "Dreyer",
-        "given": "Frédéric A."
-      },
-      {
-        "family": "Cutting",
-        "given": "Daniel"
-      },
-      {
-        "family": "Schneider",
-        "given": "Constantin"
-      },
-      {
-        "family": "Kenlay",
-        "given": "Henry"
-      },
-      {
-        "family": "Deane",
-        "given": "Charlotte M."
-      }
-    ],
-    "issued": {
-      "date-parts": [[2023]]
-    },
-    "publisher": "arXiv",
-    "DOI": "10.48550/arXiv.2310.19513",
-    "URL": "https://doi.org/10.48550/arXiv.2310.19513",
-    "version": "1",
-    "id": "dreyer-abmpnn"
-  },
-  {
-    "type": "article-journal",
     "title": "Using deep-learning predictions reveals a large number of register errors in PDB depositions",
     "author": [
       {
@@ -1729,5 +664,184 @@
     "DOI": "10.1107/S2052252524009114",
     "URL": "https://doi.org/10.1107/S2052252524009114",
     "id": "rodriguez-register-errors"
+  },
+  {
+    "id": "zhu-6ad0",
+    "type": "article-journal",
+    "title": "Discovery and structural characterization of a therapeutic antibody against coxsackievirus A10",
+    "issued": {
+      "date-parts": [[2018, 9, 7]]
+    },
+    "container-title": "Science Advances",
+    "volume": "4",
+    "issue": "9",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "DOI": "10.1126/sciadv.aat7459",
+    "author": [
+      {
+        "family": "Zhu",
+        "given": "Rui"
+      },
+      {
+        "family": "Xu",
+        "given": "Longfa"
+      },
+      {
+        "family": "Zheng",
+        "given": "Qingbing"
+      },
+      {
+        "family": "Cui",
+        "given": "Yanxiang"
+      },
+      {
+        "family": "Li",
+        "given": "Shaowei"
+      },
+      {
+        "family": "He",
+        "given": "Maozhou"
+      },
+      {
+        "family": "Yin",
+        "given": "Zhichao"
+      },
+      {
+        "family": "Liu",
+        "given": "Dongxiao"
+      },
+      {
+        "family": "Li",
+        "given": "Shuxuan"
+      },
+      {
+        "family": "Li",
+        "given": "Zizhen"
+      },
+      {
+        "family": "Chen",
+        "given": "Zhenqin"
+      },
+      {
+        "family": "Yu",
+        "given": "Hai"
+      },
+      {
+        "family": "Que",
+        "given": "Yuqiong"
+      },
+      {
+        "family": "Liu",
+        "given": "Che"
+      },
+      {
+        "family": "Kong",
+        "given": "Zhibo"
+      },
+      {
+        "family": "Zhang",
+        "given": "Jun"
+      },
+      {
+        "family": "Baker",
+        "given": "Timothy S."
+      },
+      {
+        "family": "Yan",
+        "given": "Xiaodong"
+      },
+      {
+        "family": "Hong Zhou",
+        "given": "Z."
+      },
+      {
+        "family": "Cheng",
+        "given": "Tong"
+      },
+      {
+        "family": "Xia",
+        "given": "Ningshao"
+      }
+    ],
+    "URL": "https://doi.org/10.1126/sciadv.aat7459",
+    "page": "eaat7459"
+  },
+  {
+    "id": "sponholtz-9zwe",
+    "type": "article-journal",
+    "title": "Structure-based design of soluble prefusion-stabilized herpes simplex virus type 2 glycoprotein B antigens",
+    "issued": {
+      "date-parts": [[2026, 9]]
+    },
+    "container-title": "Cell Reports",
+    "volume": "45",
+    "issue": "9",
+    "page": "117936",
+    "publisher": "Elsevier BV",
+    "DOI": "10.1016/j.celrep.2026.117936",
+    "author": [
+      {
+        "family": "Sponholtz",
+        "given": "Madeline R."
+      },
+      {
+        "family": "Ma",
+        "given": "Daphne Y."
+      },
+      {
+        "family": "Ndashimye",
+        "given": "Emmanuel"
+      },
+      {
+        "family": "Byrne",
+        "given": "Patrick O."
+      },
+      {
+        "family": "Shu",
+        "given": "Yi"
+      },
+      {
+        "family": "Warren",
+        "given": "Christopher"
+      },
+      {
+        "family": "Thambi",
+        "given": "Nithya"
+      },
+      {
+        "family": "McCool",
+        "given": "Ryan S."
+      },
+      {
+        "family": "Slein",
+        "given": "Matthew D."
+      },
+      {
+        "family": "Johnson",
+        "given": "Nicole V."
+      },
+      {
+        "family": "Rose",
+        "given": "William A.",
+        "suffix": "2nd"
+      },
+      {
+        "family": "Zhang",
+        "given": "Lan"
+      },
+      {
+        "family": "Durr",
+        "given": "Eberhard"
+      },
+      {
+        "family": "Wang",
+        "given": "Dai"
+      },
+      {
+        "family": "McLellan",
+        "given": "Jason S."
+      }
+    ],
+    "URL": "https://doi.org/10.1016/j.celrep.2026.117936"
   }
 ]

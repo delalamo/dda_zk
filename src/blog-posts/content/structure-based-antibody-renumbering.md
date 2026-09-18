@@ -11,9 +11,9 @@ SAbR renumbers antibody structures by comparing their per-residue ProteinMPNN em
 The hope is that design pipelines can now determine where these regions are in designs using actual geometry, rather than sequences. The bigger value-add is how it might allow the training data to be better defined and cleaned up. One thing I found while developing this method was that it disagreed occasionally with sequence-based tools; in a few cases, the disagreements were localized to places flagged by a previous study as being possibly misassigned [cite](#cite:rodriguez-register-errors):
 
 :::figure register-comparison
-![Interactive comparison of antibody structures 6AD0 chain L and 9ZWE chain O, focused on the disputed strand and nearby conserved cysteine.](/assets/posts/structure-based-antibody-renumbering/register-errors.png)
+[View the source figure in the full manuscript (PDF)](/assets/posts/structure-based-antibody-renumbering/SAbR_manuscript.pdf#page=16)
 
-The disputed strand and the nearby conserved cysteine (IMGT C104) are shown as sticks; the surrounding framework is faded. Loop colors follow the source figure. The rows show its SAbR and ANARCI IMGT assignments; hovering over the structures shows the deposited residue numbers. [Source figure and discussion](/posts/structure-based-antibody-renumbering/report#figure-register-errors).
+The disputed strand and the nearby conserved cysteine (IMGT C104) are shown as sticks; the surrounding framework is faded. Loop colors follow the source figure. The rows show its SAbR and ANARCI IMGT assignments; hovering over the structures shows the deposited residue numbers. [Source figure in the full manuscript (PDF)](/assets/posts/structure-based-antibody-renumbering/SAbR_manuscript.pdf#page=16).
 
 Structure sources: [6AD0](https://www.rcsb.org/structure/6AD0), Zhu et al. [cite](#cite:zhu-6ad0); [9ZWE](https://www.rcsb.org/structure/9ZWE), Sponholtz et al. [cite](#cite:sponholtz-9zwe).
 

@@ -13,11 +13,11 @@ function formatDate(dateStr) {
   });
 }
 
-function BlogPostPage({ report = false }) {
+function BlogPostPage() {
   const { postId } = useParams();
   const post = findPostById(postId);
 
-  if (!post || (report && !post.reportContent)) {
+  if (!post) {
     return (
       <div>
         <h2 style={{ marginBottom: '0.75rem' }}>Post not found</h2>
@@ -45,7 +45,7 @@ function BlogPostPage({ report = false }) {
     <article>
       {/* Back link */}
       <Link
-        to={report ? `/posts/${postId}` : '/posts'}
+        to="/posts"
         style={{
           display: 'inline-flex',
           alignItems: 'center',
@@ -59,7 +59,7 @@ function BlogPostPage({ report = false }) {
         onMouseEnter={(e) => (e.target.style.color = 'var(--color-text)')}
         onMouseLeave={(e) => (e.target.style.color = 'var(--color-text-muted)')}
       >
-        &larr; {report ? 'Back to the post' : 'All posts'}
+        &larr; All posts
       </Link>
 
       {/* Title */}
@@ -74,7 +74,6 @@ function BlogPostPage({ report = false }) {
         }}
       >
         {post.title}
-        {report ? ' — Full report' : ''}
       </h1>
 
       {/* Meta row */}
@@ -101,13 +100,13 @@ function BlogPostPage({ report = false }) {
 
       {/* Post content */}
       <div className="post-content" style={{ lineHeight: 1.8 }}>
-        {report ? post.reportContent : post.content}
+        {post.content}
       </div>
 
       {/* Divider + back link */}
       <hr style={{ margin: '3rem 0 1.5rem' }} />
       <Link
-        to={report ? `/posts/${postId}` : '/posts'}
+        to="/posts"
         style={{
           display: 'inline-flex',
           alignItems: 'center',
@@ -120,7 +119,7 @@ function BlogPostPage({ report = false }) {
         onMouseEnter={(e) => (e.target.style.color = 'var(--color-text)')}
         onMouseLeave={(e) => (e.target.style.color = 'var(--color-text-muted)')}
       >
-        &larr; {report ? 'Back to the post' : 'All posts'}
+        &larr; All posts
       </Link>
     </article>
   );

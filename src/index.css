@@ -358,7 +358,7 @@ hr {
   text-align: left;
 }
 
-/* Manuscript figures, tables, equations, and generated references. */
+/* Post figures and generated references. */
 .research-article figure {
   margin: 2rem 0;
 }
@@ -386,30 +386,6 @@ hr {
   color: inherit;
 }
 
-.article-table-scroll,
-.article-equation {
-  max-width: 100%;
-  overflow-x: auto;
-}
-
-.article-table-scroll:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 3px;
-}
-
-.research-article table {
-  display: table;
-  width: 100%;
-  margin: 0;
-  font-size: 0.8125rem;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
-.research-article th {
-  background: var(--color-code-bg);
-}
-
 .article-references {
   margin-top: 3rem;
   padding-top: 1rem;
@@ -429,19 +405,6 @@ hr {
 
 .article-citation {
   font-size: 0.85em;
-}
-
-.research-article th {
-  white-space: normal;
-  min-width: 5.5rem;
-  overflow-wrap: normal;
-}
-
-.research-article tr > :first-child {
-  position: sticky;
-  left: 0;
-  background: var(--color-bg);
-  text-align: left;
 }
 
 /* One shared canvas keeps both antibody structures synchronized. */
@@ -469,7 +432,7 @@ hr {
 .comparison-controls button:disabled { opacity: 0.5; cursor: default; }
 .comparison-controls button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 .post-content .comparison-numbering table { display: table; width: 100%; font: 0.8rem/1.5 'Courier New', monospace; margin: 0; }
-.post-content .comparison-numbering td, .post-content .comparison-numbering th { padding: 0.2rem; border: none; text-align: center; min-width: 0; position: static; background: transparent; }
+.post-content .comparison-numbering td, .post-content .comparison-numbering th { padding: 0.2rem; border: none; text-align: center; }
 .post-content .comparison-numbering th:first-child { text-align: left; padding-right: 0.4rem; }
 .post-content .comparison-numbering .cysteine { background: #f5db7140; font-weight: 700; }
 .comparison-numbering caption { display: none; }

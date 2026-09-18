@@ -6,9 +6,8 @@ import '@citation-js/plugin-csl';
 export function prepareArticle(source, records = []) {
   const blocks = [];
   const targets = new Map();
-  const counters = new Map();
   const definition =
-    /^:::(figure|table|references)(?: ([a-z][a-z0-9-]*)( supplementary)?)?\n([\s\S]*?)^:::$/gm;
+    /^:::(figure|references)(?: ([a-z][a-z0-9-]*))?\n([\s\S]*?)^:::$/gm;
   let cursor = 0;
   let bibliographyCount = 0;
 
@@ -19,7 +18,7 @@ export function prepareArticle(source, records = []) {
         source: source.slice(cursor, match.index),
       });
     }
-    const [, type, id, supplementary, body] = match;
+    const [, type, id, body] = match;
     if (type === 'references') {
       if (++bibliographyCount > 1)
         throw new Error('Only one bibliography is allowed.');
@@ -29,37 +28,31 @@ export function prepareArticle(source, records = []) {
       const key = `${type}:${id}`;
       if (targets.has(key))
         throw new Error(`Duplicate article reference: ${key}`);
-      const series = `${type}:${supplementary ? 'supplementary' : 'main'}`;
-      const number = (counters.get(series) || 0) + 1;
-      counters.set(series, number);
-      const label = `${type === 'figure' ? 'Figure' : 'Table'} ${supplementary ? 'S' : ''}${number}`;
+      const label = `Figure ${targets.size + 1}`;
       const target = { type, id, label, anchor: `${type}-${id}` };
       targets.set(key, target);
 
-      if (type === 'figure') {
-        const image =
-          /^!\[([^\]]*)\]\(([^\s)]+)(?: "([1-9]\d*)x([1-9]\d*)")?\)\s*\n([\s\S]*)$/.exec(
-            body
-          );
-        if (!image)
-          throw new Error(`Figure ${id} must start with a Markdown image.`);
-        blocks.push({
-          ...target,
-          alt: image[1],
-          src: image[2],
-          width: image[3] ? Number(image[3]) : undefined,
-          height: image[4] ? Number(image[4]) : undefined,
-          caption: image[5].trim(),
-        });
-      } else {
-        const start = body.search(/^\|/m);
-        if (start < 0) throw new Error(`Table ${id} needs a Markdown table.`);
-        blocks.push({
-          ...target,
-          caption: body.slice(0, start).trim(),
-          source: body.slice(start),
-        });
-      }
+      const media =
+        /^(!?)\[([^\]]*)\]\(([^\s)]+)(?: "([1-9]\d*)x([1-9]\d*)")?\)\s*\n([\s\S]*)$/.exec(
+          body
+        );
+      if (!media)
+        throw new Error(
+          `Figure ${id} must start with a Markdown image or link.`
+        );
+      const [, imageMarker, mediaLabel, url, width, height, caption] = media;
+      blocks.push({
+        ...target,
+        ...(imageMarker
+          ? {
+              alt: mediaLabel,
+              src: url,
+              width: width ? Number(width) : undefined,
+              height: height ? Number(height) : undefined,
+            }
+          : { href: url, linkLabel: mediaLabel }),
+        caption: caption.trim(),
+      });
     }
     cursor = match.index + match[0].length;
   }
@@ -87,7 +80,7 @@ export function prepareArticle(source, records = []) {
     }
   }
   for (const [, type, id] of source.matchAll(
-    /\]\(#(figure|table):([a-z0-9-]+)(?::[A-Z])?\)/g
+    /\]\(#(figure):([a-z0-9-]+)(?::[A-Z])?\)/g
   )) {
     if (!targets.has(`${type}:${id}`))
       throw new Error(`Unknown ${type} reference: ${id}`);

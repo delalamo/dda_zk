@@ -20,7 +20,6 @@ function App() {
 
           <Route path="/posts" element={<PostsPage />} />
           <Route path="/posts/:postId" element={<BlogPostPage />} />
-          <Route path="/posts/:postId/report" element={<BlogPostPage report />} />
 
           {/* Route for the notes embed */}
           <Route path="/notes" element={<NotesPage />} />
