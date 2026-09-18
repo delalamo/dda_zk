@@ -1,0 +1,41 @@
+{
+  "sourceFigure": "SAbR manuscript, supplementary figure S4, second example",
+  "query": {
+    "pdb": "6AD0",
+    "authChain": "L",
+    "residueRange": [
+      17,
+      24
+    ],
+    "partnerCysteine": 93
+  },
+  "reference": {
+    "pdb": "9ZWE",
+    "authChain": "O",
+    "figureChainLabel": "Q",
+    "residueRange": [
+      18,
+      25
+    ],
+    "partnerCysteine": 88,
+    "note": "The source figure labels the reference Q. Deposited protein chain O has the matching light-chain sequence; the deposited entry has no protein auth chain Q."
+  },
+  "alignment": {
+    "atoms": [
+      "N",
+      "CA",
+      "C"
+    ],
+    "queryResidues": [
+      17,
+      24
+    ],
+    "referenceResidues": [
+      18,
+      25
+    ],
+    "rmsdAngstrom": 1.04901,
+    "method": "proper Kabsch rigid fit; no internal coordinate edits"
+  },
+  "numbering": "PDB author residue numbers retained. SAbR/ANARCI IMGT comparison shown separately, transcribed from source figure."
+}

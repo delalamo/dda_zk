@@ -6,14 +6,18 @@ function formatDate(dateStr) {
   if (!dateStr) return '';
   const [year, month, day] = dateStr.split('-');
   const d = new Date(Number(year), Number(month) - 1, Number(day));
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  return d.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 }
 
-function BlogPostPage() {
+function BlogPostPage({ report = false }) {
   const { postId } = useParams();
   const post = findPostById(postId);
 
-  if (!post) {
+  if (!post || (report && !post.reportContent)) {
     return (
       <div>
         <h2 style={{ marginBottom: '0.75rem' }}>Post not found</h2>
@@ -21,7 +25,7 @@ function BlogPostPage() {
           Sorry, we couldn&apos;t find the post you were looking for.
         </p>
         <Link
-          to="/"
+          to="/posts"
           style={{
             fontSize: '0.875rem',
             color: 'var(--color-text-muted)',
@@ -41,7 +45,7 @@ function BlogPostPage() {
     <article>
       {/* Back link */}
       <Link
-        to="/"
+        to={report ? `/posts/${postId}` : '/posts'}
         style={{
           display: 'inline-flex',
           alignItems: 'center',
@@ -55,7 +59,7 @@ function BlogPostPage() {
         onMouseEnter={(e) => (e.target.style.color = 'var(--color-text)')}
         onMouseLeave={(e) => (e.target.style.color = 'var(--color-text-muted)')}
       >
-        &larr; All posts
+        &larr; {report ? 'Back to the post' : 'All posts'}
       </Link>
 
       {/* Title */}
@@ -70,6 +74,7 @@ function BlogPostPage() {
         }}
       >
         {post.title}
+        {report ? ' — Full report' : ''}
       </h1>
 
       {/* Meta row */}
@@ -91,18 +96,18 @@ function BlogPostPage() {
         >
           {formatDate(post.date)}
         </time>
-        {post.category && (
-          <span className="post-badge">{post.category}</span>
-        )}
+        {post.category && <span className="post-badge">{post.category}</span>}
       </div>
 
       {/* Post content */}
-      <div style={{ lineHeight: 1.8 }}>{post.content}</div>
+      <div className="post-content" style={{ lineHeight: 1.8 }}>
+        {report ? post.reportContent : post.content}
+      </div>
 
       {/* Divider + back link */}
       <hr style={{ margin: '3rem 0 1.5rem' }} />
       <Link
-        to="/"
+        to={report ? `/posts/${postId}` : '/posts'}
         style={{
           display: 'inline-flex',
           alignItems: 'center',
@@ -115,7 +120,7 @@ function BlogPostPage() {
         onMouseEnter={(e) => (e.target.style.color = 'var(--color-text)')}
         onMouseLeave={(e) => (e.target.style.color = 'var(--color-text-muted)')}
       >
-        &larr; All posts
+        &larr; {report ? 'Back to the post' : 'All posts'}
       </Link>
     </article>
   );

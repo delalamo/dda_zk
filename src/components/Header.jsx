@@ -40,13 +40,13 @@ function Header() {
         </Link>
 
         {/* Navigation */}
-        <nav>
+        <nav aria-label="Main navigation">
           <ul
             style={{
               listStyle: 'none',
               display: 'flex',
               alignItems: 'center',
-              gap: '1.5rem',
+              gap: 'clamp(0.75rem, 3vw, 1.5rem)',
               padding: 0,
               margin: 0,
             }}
@@ -54,6 +54,7 @@ function Header() {
             {[
               { to: '/', label: 'CV', external: false },
               { to: '/notes', label: 'Notes', external: false },
+              { to: '/posts', label: 'Posts', external: false },
             ].map(({ to, label, external }) => (
               <li key={label}>
                 {external ? (
@@ -80,7 +81,7 @@ function Header() {
                 ) : (
                   <NavLink
                     to={to}
-                    end
+                    end={to === '/'}
                     style={({ isActive }) => ({
                       fontSize: '0.875rem',
                       fontWeight: 500,
@@ -91,7 +92,7 @@ function Header() {
                     onMouseEnter={(e) =>
                       (e.target.style.color = 'var(--color-text)')
                     }
-                    onMouseLeave={(e) => {
+                    onMouseLeave={() => {
                       // Only reset if not active (NavLink handles active state via style prop)
                     }}
                   >

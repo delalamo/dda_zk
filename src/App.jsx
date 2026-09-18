@@ -4,6 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout'; // Import the Layout component
 import NotesPage from './pages/NotesPage';
 import CVPage from './pages/CVPage';
+import PostsPage from './pages/PostsPage';
+import BlogPostPage from './pages/BlogPostPage';
 import { MathJaxContext } from 'better-react-mathjax';
 
 function App() {
@@ -15,6 +17,10 @@ function App() {
         <Routes>
           {/* Route for the CV page (default) */}
           <Route path="/" element={<CVPage />} />
+
+          <Route path="/posts" element={<PostsPage />} />
+          <Route path="/posts/:postId" element={<BlogPostPage />} />
+          <Route path="/posts/:postId/report" element={<BlogPostPage report />} />
 
           {/* Route for the notes embed */}
           <Route path="/notes" element={<NotesPage />} />
