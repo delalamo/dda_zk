@@ -9,6 +9,7 @@ function Layout({ children }) {
       <main
         style={{
           maxWidth: '720px',
+          width: '100%',
           margin: '0 auto',
           padding: '3rem 1.5rem 4rem',
           flex: '1 1 auto',

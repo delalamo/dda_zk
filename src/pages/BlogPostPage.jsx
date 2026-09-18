@@ -6,7 +6,11 @@ function formatDate(dateStr) {
   if (!dateStr) return '';
   const [year, month, day] = dateStr.split('-');
   const d = new Date(Number(year), Number(month) - 1, Number(day));
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  return d.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 }
 
 function BlogPostPage() {
@@ -21,7 +25,7 @@ function BlogPostPage() {
           Sorry, we couldn&apos;t find the post you were looking for.
         </p>
         <Link
-          to="/"
+          to="/posts"
           style={{
             fontSize: '0.875rem',
             color: 'var(--color-text-muted)',
@@ -41,7 +45,7 @@ function BlogPostPage() {
     <article>
       {/* Back link */}
       <Link
-        to="/"
+        to="/posts"
         style={{
           display: 'inline-flex',
           alignItems: 'center',
@@ -91,18 +95,18 @@ function BlogPostPage() {
         >
           {formatDate(post.date)}
         </time>
-        {post.category && (
-          <span className="post-badge">{post.category}</span>
-        )}
+        {post.category && <span className="post-badge">{post.category}</span>}
       </div>
 
       {/* Post content */}
-      <div style={{ lineHeight: 1.8 }}>{post.content}</div>
+      <div className="post-content" style={{ lineHeight: 1.8 }}>
+        {post.content}
+      </div>
 
       {/* Divider + back link */}
       <hr style={{ margin: '3rem 0 1.5rem' }} />
       <Link
-        to="/"
+        to="/posts"
         style={{
           display: 'inline-flex',
           alignItems: 'center',

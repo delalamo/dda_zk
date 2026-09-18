@@ -1,7 +1,7 @@
 // src/blog-posts/posts.js
 
-// Find all .jsx files in the content directory now
-const postModules = import.meta.glob('./content/*.jsx', { eager: true }); // <--- Change '*.js' to '*.jsx'
+// Each content module exports metadata and a React element as `post`.
+const postModules = import.meta.glob('./content/*.jsx', { eager: true });
 
 // Process the imported modules into an array of post objects
 export const posts = Object.values(postModules)

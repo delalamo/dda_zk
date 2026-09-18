@@ -54,7 +54,7 @@ function BlogPostPreview({ post }) {
         }}
       >
         <Link
-          to={`/post/${post.id}`}
+          to={`/posts/${post.id}`}
           style={{
             color: 'var(--color-text)',
             textDecoration: 'none',
